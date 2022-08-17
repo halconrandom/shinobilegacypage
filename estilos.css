@@ -140,6 +140,12 @@ body {
 
 /* ! MEDIA QUIRIES PARA TODO - NO TOCAR */
 
+@media (max-height: 735px){
+  .linksNavegador{
+    padding-top: 40px;
+  }
+}
+
 @media (min-width: 1440px) {
     /* ? TAMAÑO PC*/
     .portadaInicio {
