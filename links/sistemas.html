@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/icon.png" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="../estilos.css" type="text/css" rel="stylesheet" />
+    <title>Shinobi Legacy 2.0</title>
+  </head>
+  <body>
+    <head>
+      <img
+        class="portadaInicio img-fluid"
+        src="../images/fondoNuevo.png"
+        alt="portada"
+      />
+    </head>
+    <div class="navBarCellphone">
+
+    </div>
+    <nav class="">
+      <div class="navegadorGeneral">
+        <img src="../images/icon.png" alt="icon" class="iconoNav"/>
+        <hr class="hrNav">
+        <ul class="linksNavegador ">
+          <li id="InicioNav"><img  src="../images/slideicon.png" alt=""><a id="hoverIconNav" href="">Inicio</a></li>
+          <li id="FichasNav"><img src="../images/slideicon.png" alt=""><a id="hoverIconNav"  href="">Fichas</a></li>
+          <li id="SistemasNav"><img id="SistemasIcon" src="../images/slideicon.png" alt=""><a  id="hoverIconNav" href="">Sistemas</a></li>
+          <li id="TalleresNav"><img id="TalleresIcon" src="../images/slideicon.png" alt=""><a  id="hoverIconNav" href="">Talleres</a></li>
+          <li id="EventosNav"><img id= "EventosIcon" src="../images/slideicon.png" alt=""><a id="hoverIconNav" href="">Eventos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="rectangleInicio">
+      <div class="squareDescripcion">
+        <h3 class="tituloPaginaGeneral">Bienvenido a <br> Shinobi Legacy Neo Afterlife</h3>
+        <p class="descripcionPaginaGeneral">“Somos las cenizas de un fenix que alguna vez fue el más brillante de todos”. Veinte años han pasado desde que la anterior generación logró vencer a Amon, Precursor de la Creación en donde se logró saber que más allá de todo lo conocido existen seres inentendibles que fueron los creadores de todo, sumado al intento de invasión de Letz Batalion sobre las naciones, conllevó a que el mundo ninja se fracturará de manera increible, diezmando la poblacion a niveles inimaginables. Muchos de los ninjas protagonistas de la generación lograron recuperar lo que muchos trabajaron para construir y posteriormente lograron empezar a convivir más en calma al punto de poder crear sus propias familias, dando bienvenida a la nueva generación.</p>
+      </div>
+      <!-- CARUSEL DE TEXTO -->
+      <div id="carouselGeneral" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselGeneral" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselGeneral" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselGeneral" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner active">
+          <div class="carousel-item active">
+            <img src="../images/prueba1.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-block">
+              <h5 id="tituloCaruselText">¡Una Nueva Era!</h5>
+              <p id="descripcionCaruselText">La nueva generación ha llegado. ¡Preparate para las nuevas aventuras por explorar y la nueva temática del roleplay.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/prueba3.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-block">
+              <h5 id="tituloCaruselText">¡Nuevas Dinamicas!</h5>
+              <p id="descripcionCaruselText">Ahora contamos con calculadora de daño de técnicas y ataques físicos. Pruébala <span><a href="https://docs.google.com/spreadsheets/d/14K31k1lm2RznBUXwDqngLtmcNZ356jBdXZdCjo6-dy4/edit#gid=0">Acá.</a></span></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/prueba2.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-block">
+              <h5 id="tituloCaruselText">No sé que poner acá.</h5>
+              <p id="descripcionCaruselText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illum numquam enim qui, fuga explicabo laborum, ab eos, rem delectus sapiente nobis ex nulla libero blanditiis eveniet cupiditate in minima?</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGeneral" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGeneral" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="rectangleObjetsGeneral">
+      <div class="iconosSistemasGeneral"> 
+        <input class="estadisticaInputSistema inputIconGeneral" type="radio" id="estadisticaSistema" name="inputSistemas">
+        <div class="backgroundEstadisticaSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type="radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextEstadistica"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide">Sistema de Estadistica</span> En el siguiente comentario dispondré algunas cosas importantes que deben tener en cuenta con respecto a las estadísticas que aquí manejamos. Hay que tener en cuenta algunas cosas sumamente importantes al momento de rolear con estas estadísticas y son las siguientes:
+            <ul>
+              <li>Las medidas utilizadas <span id="infoImportanteSistemas">(Kilogramos de Fuerza; KG, Kilómetros por Hora; KM/H y Segundos de Reacción; Sec)</span> son medidas no regidas por el mundo real, es decir que, si tienes 800 KG de fuerza, no significa que puedes levantar un camión como si nada, es una medida enfatizada a estabilizar la fuerza de cada uno. Igual sucede con la velocidad, no esperes ir “a la velocidad de la luz” solo por sobrepasar dicha.</li>
+              <li>Siempre se debe de especificar (y de manera clara) todos tus movimientos para evitar que te hagan manipulación blanca, si bien manejamos un sistema para que no abusen de dicha, igual podrán aprovecharse de ello de vez en cuando y por más que dispongas de más fuerza/velocidad para evitar algo o hacer algo, si no lo especificas, el rival puede aprovecharse.</li>
+              <li>¡ESTA PROHIBIDO! Poner al final de tu turno; “Todas las acciones fueron hechas a máxima capacidad”, esto es motivo de advertencia en tu ficha, lo cual significa que puedes tener una penitencia de reducción de puntos de estadística. <span id="infoImportanteSistemas">[IMPORTANTE y sin excepciones]</span></li>
+            </ul>
+            Sin más que decir con respecto a estos, procederé a mencionar cada estadística y su motivo de existencia.
+            <ul>
+              <li> <span id="infoImportanteBoldSistemas">Velocidad de Movimiento (V.M):</span> La velocidad de movimiento se mide en KM/H (Kilómetros por hora) y determina la velocidad en la que se mueve tu personaje. Es decir que, si tu corres, caminas, mueves la cabeza, etc, este irá con esta velocidad. No solo eso, sino que esta estadística determina la velocidad de tus golpes, espada, lanzamiento de shurikenjutsu y otras cosas.</li>
+              <li> <span id="infoImportanteBoldSistemas">Velocidad de Técnica (V.T):</span> La velocidad de técnica se mide en KM/H y determina la velocidad en que son lanzadas tus técnicas. Esto mayormente es usado en el caso de Ninjutsu, Fuinjutsu, Kugutsu, algunos Genjutsu, etc. Con esta velocidad es que puedes hacer que tus técnicas vayan más o menos rápido.</li>
+              <li> <span id="infoImportanteBoldSistemas">Reflejos (Seg):</span> Sin duda la estadística más importante de todas a nuestro parecer pues esta se encarga de decir si tú puedes o no esquivar un ataque. Este se mide en “Sec to React” (Segundos para reaccionar).Vale la pena decir que esta estadística no hace falta detallarla durante el rol pues se debe de colocar al final junto a todas las demás, si tú eres capaz de esquivar/bloquear algo, basta con decir “lo bloqueo gracias a mis reflejos”, aunque también es válido mencionar de distintas formas <span id="infoImportanteSistemas">(Esto es exclusivo de esta estadística, todo lo demás si se necesita especificar).</span></li>
+              <li> <span id="infoImportanteBoldSistemas">Chakra:</span> Es bastante claro para que es esta estadística. Esta se mide en “U/C” (Unidades Chakra) Si tu chakra llega a 0, quedas K.O. Existe un sistema especifico donde se menciona todo lo relacionado a esta estadistica. <label for="chakraSistema" class="clickButtonSistema">(Click acá para ver el sistema)</label></li>
+              <li> <span id="infoImportanteBoldSistemas">Chakra del Sabio:</span> El Chakra del sabio es una fuente de chakra adicional a la ya existente que se obtiene al tener un modo sabio que pueda poseer estas fuentes. Vale destacar que esta sería una especie de “barra adicional de chakra” la cual se mide en “U/S” (Unidades Senjutsu). Existe un sistema especifico donde se menciona todo lo relacionado a esta estadistica. <label for="senjutsuSistema" class="clickButtonSistema">(Click acá para ver el sistema)</label></li>
+              <li> <span id="infoImportanteBoldSistemas">Puntos de Experiencia:</span> Los puntos de experiencia son puntos que obtenemos al hacer roles. Estos tendrán múltiples usos, aunque su principal uso es el de poder crear nuevas técnicas, estilos, personajes pagables (PC), habilidades etc. Estos puntos se miden en “P.E"</li>
+              <li> <span id="infoImportanteBoldSistemas">Puntos de Respeto:</span> Los puntos de reconocimiento son aquellos que demuestran cuan reconocido es tu PJ a nivel mundial, estadal, regional, etc. Estos se miden en; “P.R Positivo” y “P.R Negativo”. Estos pueden obtener en distintos roles que influyan en el reconocimiento de tu PJ como misiones, sagas y eventos especiales. Existe un sistema especifico donde se menciona todo lo relacionado a esta estadistica. <label for="respetoSistema" class="clickButtonSistema">(Click acá para ver el sistema)</label>
+              </li>
+              <li> <span id="infoImportanteBoldSistemas">Puntos de Saga: </span> Este sería el puntaje más importante de todos, pues estos puntos de saga son otorgados únicamente en eventos y sagas y son realmente útiles al momento de querer crear cosas OC en el grupo, así que acumulen muchos.</li>
+            </ul>
+          </div>
+        </div>
+        <label class="estadisticainputSistema" for="estadisticaSistema"> <img src="../images/plantillas/estadistica.webp" class="ImgSistema" alt=""></label>
+
+
+        <input class="RespetoInputSistema inputIconGeneral" type="radio" id="respetoSistema" name="inputSistemas">
+        <div class="backgroundRespetoSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type="radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextRespeto"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide">Sistema de Respeto</span> Los puntos de respetos se crearon para poder definir cuan famoso es tu personaje. En pocas palabras entre más puntos de respeto tengas, más conocido eres. Así mismo entre menos tengas, menos popular eres. Lo interesante de esto es que existen dos barras de puntos de respetos, los positivos y negativos como bien se especificó arriba.
+            <ul>
+              <li> <span id="infoImportanteBoldSistemas">Puntos de Respeto Positivos:</span> Son aquellos que mantendrán a tu personaje como un hombre recto y de ley. Entre más puntos positivos acumules en tu ficha, más reconocido será tu personaje de forma buena, ya sea como un gran líder, héroe o ninja (o también civil, trabajador, etc).</li>
+              <li> <span id="infoImportanteBoldSistemas">Puntos de Respeto Negativo:</span> A diferencia de los positivos, estos se miden de igual forma, pero representan cuan reconocido eres de forma mala, ya sea como un tirano, villano, asesinado, malquerido etc. Entre más puntos negativos acumules, menos querido será tu PJ.</li>
+            </ul>
+            A pesar de que ambos son dos caras de la moneda en cuanto a cómo eres referido en el mundo, independientemente de cuál tengas alto, serás más o menos reconocido en el mundo. Todo depende de tus acciones lo que te lleven a ser conocido por ser un buen o mal persona. <br> Vale destacar que dependiendo de cuanto tengas (ya sea negativo o positivo) podrás tener una mayor reputación mundial:
+            <ul>
+              <li> <span id="infoImportanteBoldSistemas">50 Puntos de Respeto</span> Eres conocido en tu clan. Es decir que dentro de tu clan, tu nombre ya es conocido y en algunos casos incluso respetado.</li>
+              <li> <span id="infoImportanteBoldSistemas">100 Puntos de Respeto</span> Eres algo conocido en tu aldea. Tu nombre ya comienza a sonar entre los muros de tu aldea, pero no significa que todos te respeten. </li>
+              <li> <span id="infoImportanteBoldSistemas">250 Puntos de Respeto</span> Eres un orgullo de la aldea. Casí todos en la aldea te reconocen y pueden incluso llegar a respetarte. </li>
+              <li> <span id="infoImportanteBoldSistemas">500 Puntos de Respeto</span> Eres conocido en todo tu país. Tu nombre ha llegado hasta los lugares más remotos del país de donde provengas. </li>
+              <li> <span id="infoImportanteBoldSistemas">750 Puntos de Respeto</span> Eres conocido a nivel mundial. Tu nombre ha cruzado fronteras y te ha permitido obtener incluso respeto entre otros ninjas de otras aldeas. </li>
+            </ul>
+          </div>
+        </div>
+        <label class="inputSistema" for="respetoSistema"> <img src="../images/plantillas/respeto.webp" class="ImgSistema" alt=""></label>
+
+
+        <input class="ChakraInputSistema inputIconGeneral" type="radio" id="chakraSistema" name="inputSistemas">
+        <div class="backgroundChakraSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type="radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextChakra"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide">Sistema de Chakra</span> El Chakra (チャクラ) es la energía vital del cuerpo, el cual es esencial para cualquier jutsu, incluso hasta para el más básico, es una mezcla de la energía física presente en cada célula del cuerpo del ser vivo y la energía espiritual adquirida con el ejercicio y la experiencia. Esta energía es la que se maneja por lo general el grupo, aunque no es algo obligatorio de subir. Por lo general cuando te involucras en una battle (o incluso en roles normales) y te quedas sin chakra, comienzas a sufrir un cansancio físico que te hace recibir más daño de lo normal. Sin embargo, puedes recuperar chakra de distintas maneras, aunque depende de la situación en el que te encuentres. Vale la pena destacar que para entender lo demás, debes primero entender las restricciones del chakra en el sistema:
+            <ul>
+              <li>El Ninjutsu medico es un gran método de recuperarse de manera física y enérgicamente, por lo que tener un ninja medico en tu escuadrón es muy útil. Tengan en cuenta que tener un kit medico no les proporciona chakra.</li>
+              <li>Al momento de hacer un turno de recarga, tengan en cuenta que no pueden hacer nada ofensivo durante este mismo. Como mucho pueden esquivar uno o dos ataques y ponerse a recuperar chakra. Durante el estado de recarga, deberán quedarse completamente inmóviles recuperando dicho. Esto también es para Senjutsu.</li>
+              <li>Vale destacar que a medida que vayas agotando chakra tu nivel de resistencia disminuye, esto se explica en el sistema de daño. <label for="dañoSistema" class="clickButtonSistema">(Click acá para ver el sistema)</label> </li>
+            </ul>    
+            Al momento de realizar alguna técnica, hay dos formas de describir cuanto chakra tiene:
+            <ul>
+              <li> <span id="infoImportanteBoldSistemas">Costos Fijos: </span> Algunas técnicas poseen costos fijos que podrán ser consultados en el álbum de dicha técnica. </li>
+              <li> <span id="infoImportanteBoldSistemas">Costos Libres:</span>  Algunas otras técnicas que no posean costos fijos, podrán ser utilizadas/maniobradas al gusto del usuario como, por ejemplo: <br></li>
+            </ul>
+            <span id="ejemploChakra1">*comienzo a formular técnicas de mano de tal forma que hago el Katon: Dai Endan, usando tan solo 2500 U/C para hacer el jutsu, tras esto acerco mi mano a mi boca y lanzo una gran ráfaga de fuego hacia el oponente*</span> <br>
+            Aunque bien, aquí solo hago una línea básica de cómo alguien nuevo podría hacerlo. La forma de describirlo, mencionarlo y hacerlo es casi infinita, pues depende de como tu quieras colocarlo. Si al momento de buscar una técnica, ven que no están especificada en nuestros sistemas, por favor hazlo saber al staff junto a su link para que podamos añadirla y definir qué hará.
+            <br>
+            Para definir el desgaste hecho por una técnica que utilizamos es realmente sencillo. Solo deberemos restar dicha cantidad utilizada (ya sea en porcentajes o cifras exactas) de nuestro chakra restante. Utilizando el mismo ejemplo anterior, podríamos decir lo siguiente:
+              <ul id="ejemploChakra2">
+                <li>Chakra Utilizado en Técnica: 2.500 U/C</li>
+                <li>Chakra Restante antes de usar la técnica: 10.000 U/C</li>
+                <li>Chakra Restante Posterior al uso: 7.500 U/C</li>
+              </ul>
+            Tras agotar el chakra disponible el usuario está muy expuesto a sufrir más daño físico, así mismo durante la batalla a medida que el PJ vaya gastando el chakra, este se va cansando más y más, si el usuario llega a 0 U/C queda inconsciente, por ello se recomienda tener cuidado con tus fuentes de chakra. 
+            <br>
+            Aunque pierdas gran parte de tu chakra en un rol, también puedes recargarla de vuelta. Para ello solo se deberá descansar un turno para lograr recuperar un 10% de su Chakra Total, es decir que si tu chakra total es (ejemplo) 10.000 U/C, al recargar obtendrás 1.000 U/C, explicándolo de mejor forma:
+            <ul id="ejemploChakra2">
+              <li>Chakra Total: 10.000 U/C (ejemplo)</li>
+              <li>Chakra Restante: 2.000 U/C</li>
+              <li>1 Comentario de Recarga (10%): 1.000 U/C</li>
+              <li>Total Después de ese Turno: 3.000 U/C</li>
+            </ul>
+          </div>
+        </div>
+        <label class="inputSistema" for="chakraSistema"> <img src="../images/plantillas/chakra.webp" class="ImgSistema" alt=""></label>
+
+
+        <input class="senjutsuInputSistema inputIconGeneral" type="radio" id="senjutsuSistema" name="inputSistemas">
+        <div class="backgroundSenjutsuSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type="radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextRespeto"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide">Sistema de Senjutsu</span> Senjutsu (仙術) se refiere a un campo especializado de jutsu que permite al usuario sentir y reunir la Energía de la Naturaleza que rodea el terreno para utilizarla a su favor. Los especialistas del Senjutsu pueden hacer que dicha energía penetre en ellos y se combine con su propio Chakra creando un nuevo y poderoso Chakra llamado Chakra Senjutsu o Chakra del Sabio. La única forma de obtener dicho poder es de los siguientes dos métodos:
+            <ul>
+              <li><span id="infoImportanteBoldSistemas">Modo Sabio [Cualquiera Existente en el Grupo]:</span> Estos se obtienen haciendo contrato con un animal del álbum de modos sabios. Estos tienen sus características y demás.</li>
+              <li><span id="infoImportanteBoldSistemas">Que alguien con Senjutsu te transfiera chakra sabio:</span> Esto es suponiendo que en una pelea alguien te transfiera de su chakra natural para que poseas algo. Si no posees modo sabio, no puedes recargar el chakra que te dieron. Vale destacar que, aunque poseas dicho chakra en tu cuerpo, no obtendrás las ventajas del modo sabio.</li>
+            </ul>
+            Una cosa que deben de tener en cuenta que, si recibes daño, jamás se restará del Senjutsu, siempre será de tu barra de chakra normal. Vale destacar que la única forma de entrar en el modo sabio es que recolectes chakra por un turno para el siguiente entrar en dicho modo sabio, aunque esto puede diferir de entre todos los modos existentes. Los clones no pueden entrar en modo sabio ni recolectar chakra para hacer que el original entre en modo sabio. La única forma de que un clon pueda recolectar chakra del senjutsu es que el original este en modo sabio y haya creado clones estando en dicho estado.
+            <br> <br>
+            <ul id="ejemploChakra2">
+              <li><span id="infoImportanteBoldSistemas">Buff del Senjutsu:</span> Más allá de los buffs que tienen los modo sabio, el Senjutsu es un tipo de chakra por mucho más poderoso que el chakra normal y por ende cuenta con los siguientes buff de potenciador duplicado sobre las técnicas (x2 de daño). Es decir que si tu atacas con una técanica con chakra senjutsu de 2.000 U/S, este tendría un efecto 4.000 U/C.</li>
+            </ul>
+          </div>
+        </div>
+        <label class="inputSistema" for="senjutsuSistema"> <img src="../images/plantillas/senjutsu.webp" class="ImgSistema" alt=""></label>
+  
+  
+        <input class="reflejosInputSistema inputIconGeneral" type="radio" id="reflejosSistema" name="inputSistemas">
+        <div class="backgroundreflejosSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type="radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextRespeto"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide">Sistema de Reflejos</span> Los reflejos de tu personaje son una de las estadísticas más importante a tener en cuenta durante los roles en que debas emplear tus estadísticas. Esta te permite esquivar o darte cuenta de cosas a tu alrededor de manera efectiva. Como bien mencionado anteriormente, los reflejos permitirán determinar si el usuario podrá bloquear o esquivar golpes/técnicas de cierta velocidad. Los golpes/técnicas son medidos por la velocidad del usuario, cada una dependiendo si va en tu velocidad de movimiento o velocidad de técnicas.
+          <br>
+          Los Reflejos trabajan igualmente con puntos acumulables. A medida que vayas entrenando vas obteniendo puntos distribuibles, por lo que podrás distribuir puntos a esta estadística. <label for="aumentoEstadisticaSistema" class="clickButtonSistema">(Click acá para ver el sistema)</label>
+          <p><span id="infoImportanteSistemas">Para Bloquear un Ataque:</span> Para bloquear un ataque es necesario tener menos reflejos que para esquivarlo, esto mayormente viene bien en situaciones donde debas pelear frente a frente al adversario. Para aprovecharte del sistema puedes tener máximo un 15% menos reflejos que el ataque que viene hacia ti.</p>
+          <p id="ejemploChakra1"> Ejemplo: Si un golpe te llega a 100 KM/ (V.M) y tú tienes 85 Reflejos, puedes bloquearlo. Claramente el bloqueo de un ataque te hace recibir algo de daño, pero se ve reducido.</p>
+          <p> <span id="infoImportanteSistemas">Para Esquivar un Ataque:</span> Para esquivar un ataque es necesario tener igual o más reflejos que la técnica/ataque que vayas a recibir. Esto es mayormente para evitar recibir el daño completo o reducido de un ataque.</p>
+          <p id="ejemploChakra1"> Ejemplo: Si una técnica te viene a 100 KM/H [V.T] y tú tienes 100 de reflejos (o más), puedes esquivarlo.</p>
+          <p><span id="infoImportanteSistemas">Variante Vista Frontal:</span> Suponiendo que estas peleando de manera frontal a distancia, hay manera de que puedas esquivar/bloquear un ataque sin la necesidad de tener muchos reflejos, si no por tener la misma velocidad (o superior) a la del ataque enemigo. Esto viene bien acompañado en personas con Byakugan pues ellos tienen la habilidad de ver 359 grados alrededor. Claro está que si no puedes ver de dónde viene, no puedes esquivarlo, es decir que no puedes decir: <span id="infoImportanteAvisos">“me volteé rápidamente y vi que lanzabas una kunai” Para poder percibir cosas así se necesitan reflejos.</span></p>
+          <p><span id="infoImportanteSistemas">Modo Sensorial:</span> Existen ninjas que tienen habilidades sensoriales, estas personas pueden percibir el chakra a su alrededor permitiendo que puedan saber si algún ataque de chakra los vaya a afectar. Esto no incluye ataques con armas o taijutsu, si estos no tienen chakra. Esta variante sensorial funciona siempre y cuando tengas al menos un 15% de tu chakra total disponible.</p>
+          <p><span id="infoImportanteSistemas">Disputa Buffs de Reflejos:</span> No puedes esquivar un ataque tras haber ejecutado alguna técnica/buff, etc, que te aumente tus reflejos. Esto no se ve afectado si dicho es inmediato como por ejemplo dojutsu.</p>
+          <p><span id="infoImportanteSistemas">Disputa Lógica:</span> Hay que tener en cuenta que no siempre podrás evadir ataques cuerpo a cuerpo (cuando se pelea a puños cercano o espadazos), así que se pide lógica en cuanto a los turnos y el evitar usar cosas rebuscadas para salvarse.</p>
+          </div>
+        </div>
+        <label class="inputSistema" for="reflejosSistema"> <img src="../images/plantillas/reflejos.webp" class="ImgSistema" alt=""></label>
+  
+  
+        <input class="buffsInputSistema inputIconGeneral" type="radio" id="buffsSistema" name="inputSistemas">
+        <div class="backgroundBuffsSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type=" radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextRespeto"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide">Sistema de Buffeo</span> ¿Qué es un Buff? Dentro del grupo, se conoce como buff a las técnicas, estados o habilidades que generan en el usuario un aumento de estadísticas. Estos aumentos siempre son calculados sobre las estadisticas base. <br>
+            Para evitar el abuso de este tipo de técnicas, se decidido implementar el siguiente sistema, el cual clasifica los buffs en tres clases. Cada grupo funciona de una manera diferente, si tienen dudas a que clase pertenece un buff en concreto, pese a la descripción que tendrá cada clase a continuación. Pueden preguntar a staff. Las clases son las siguientes:
+            <ol>
+              <li><span id="infoImportanteBoldSistemas">Buffs Activos:</span> Son aquellos buff que se activan en un momento dado durante el rol, es decir, son esos a los que se les marca el uso en algún turno de rol. Ejemplos de estos buff serían Byakugan, Sharingan, Modos Sabios o Carga Eléctrica. A pesar de poder tener varios buffs de una misma estadística, estos no se pueden sumar entre sí, se deberá tomar el buff más alto de los que se tienen activo.
+              </li>
+            </ol>
+             <p id="ejemploChakra1">Ejemplo: Yo activo un buff que me da +30% Fuerza, +20% V.M y +30 Reflejos. Y un segundo que me da +10% Fuerza, +25% V.M y +20% V.T. De esta forma el cambio de las estadísticas del usuario pasa a ser el siguiente, cada stat solo toma el buff más alto de activos:
+              <ul id="ejemploChakra1">
+                <li>Fuerza: +30% (Primer Buff)</li>
+                <li>V.M: +25% (Segundo Buff)</li>
+                <li>V.T: +20% (Segundo Buff)</li>
+                <li>Reflejos: +30% (Primer Buff)</li>
+              </ul>
+             </p>
+             <ol>
+              <li id="desaparecerlista"></li>
+              <li><span id="infoImportanteBoldSistemas">Buffs Pasivos:</span> Son aquellos buff que no se activan como tal, pero que el usuario tiene entre su repertorio. Ejemplos de este tipo de buffs serían, la habilidad temperamento calmado, el puño fuerte o el puño suave. A diferencia de los buffs pasivos, estos no tienen limite de cuantos puedes tener activos. Pues son buffs que vienen ya por habilidades del usuario.</li>
+              <li><span id="infoImportanteBoldSistemas">Buffs de Técnicas:</span> Son aquellos buffs que no afectamente directamente al usuario, sino se aplica sobre las técnicas como tal. Un ejemplo ráfago euro. Este tipo de técnicas pasan a tomar su buff siempre de la estadística base del usuario a no ser que este tenga un buff activo previamente que le permita tomar ese número de base.</li>
+             </ol>
+
+          </div>
+        </div>
+        <label class="inputSistema" for="buffsSistema"> <img src="../images/plantillas/buffeos.webp" class="ImgSistema" alt=""></label>
+
+        <input class="dañoInputSistema inputIconGeneral" type="radio" id="dañoSistema" name="inputSistemas">
+        <div class="backgroundDañoSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type="radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextRespeto"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide">Sistema de Lesion</span> Se puede considerar que el nivel de resistencia de un personaje está en su nivel de Chakra. Entre más chakra tenga el usuario, más revitalizado estará. A medida que en una pelea el usuario va desgastando chakra bloqueando ataques, usando técnicas y recibiendo golpes, el cansancio del personaje ira aumentando. <br>
+          De acuerdo al sistema de chakra, si el usuario alcanza los 0 U/C (Cero Chakra), este caerá desmayado o totalmente agotado, ya que esto significaría que habrá perdido todas sus fuerzas y por ende una pelea o entrenamiento. <br> <br>
+          Por ende, pondré los siguientes parametros para que se tengan en cuenta:
+          <ul>
+            <li><span id="infoImportanteBoldSistemas">Daño Completo de una Técnica:</span> Actualmente el daño que se recibe dependerá de cuanto chakra te está golpeado. Ese nivel de poder que te golpea se aumenta un 50% de la base y el resultado final sería lo que te quita.</li>
+          </ul>
+          <p id="ejemploChakra2">Técnica del Rival: 1000 U/C <br>
+            Daño que recibiría: 1500 U/C <br> <br>
+            El 50% de 1000 es 500, por ende, se suman esa cifra. Si fuera una técnica de 10.000 U/C, el daño seria 15.000 y así sucesivamente. <br><br>
+            Total Restante de Chakra antes del golpe: 5000 U/C <br>
+            Total al ser golpeado de lleno: 3500 U/C
+            </p>
+          <p>Tengan en cuenta que, si tu técnica tiene algún buff especial que le aumenta su poder de daño, el 50% que se toma es de la base. Es decir:</p>
+          <p id="ejemploChakra2">Técnica con buff: 100 U/C + 15% (ejemplo de buff de técnica)=115 U/C <br>
+            Daño de Técnica con el sistema: 165 U/C; El 50% se fija en el daño base sin buff y luego se le añade el buff de técnica.</p>
+          <p id="infoImportanteAvisos">Hay que tener en cuenta que hay técnicas con efectos secundarios o efectos obvios. Como una técnica de fuego que te pueda matar por lógica y así.</p>
+          <hr class="hrSistemas">
+          <ul>
+            <li><span id="infoImportanteBoldSistemas">Daño Reducido por Concentración de Bloqueo:</span> Suponiendo que concentras chakra en un área del cuerpo para intentar amortiguar una técnica recibida, este se verá disminuido pero no del todo. Se tomará en cuenta solo el 40% del poder total de esa técnica. Por ejemplo:</li>
+          </ul>
+          <p id="ejemploChakra2">Técnica del Rival: 1000 U/C <br>
+            40%= 400 U/C <br>
+            Total de Chakra antes: 5000 U/C <br>
+            Total de Chakra al recibir ese golpe disminuido: 4600 U/C</p>
+          <p>Ten en cuenta que cuando digo que colocas chakra en un punto en específico es que coloques la misma cantidad que la técnica o superior a la dicha. Aunque se concentre chakra en esa parte del cuerpo para defenderse, está cantidad no se gasta, solo se consume el 40%. <br>
+          <span id="infoImportanteAvisos">Claramente hay que tener la capacidad de bloquear/esquivar algo para lograrlo.</span><br>
+          Además hay que usar la lógica en estas maniobras, pues tampoco es que vas a lograr bloquear una bola de fuego con los brazos sin recibir quemaduras o efectos secundarios.</p>
+          <hr>
+          <ul>
+            <li><span id="infoImportanteBoldSistemas">Daño por Golpes/Patadas (Taijutsu en General): </span> Los golpes y/o patadas dados con fuerza son multiplicados x2. Aunque por lo general, se podría añadir chakra a las patadas y golpes, si se hace tal cosa, ya no trabajará bajo este sistema. Así mismo, en los turnos se debe de tener en cuenta que el daño recibido en KG se traduce en U/C, es decir que si te impacta un golpe de 100 KG, te quitaría 100 U/C. Suponiendo que al momento de golpear o patear utilizas tu fuerza bruta, este si podrá ser duplicado y seguir el siguiente procedimiento: </li>
+          </ul>
+          <p id="ejemploChakra1">Si alguien te golpea con 100 kg de fuerza, debes tener en cuenta cuanta fuerza tienes tú, pues esto se considera la resistencia de golpes que tienes. Por ende, supongamos que tienes 50 de Fuerza, los 50 tuyos le restan a esos 100, dejando 50 que son ahora duplicados por la regla del sistema.</p>
+          <p>Ejemplo más claro:</p>
+          <p id="ejemploChakra2">Tu Fuerza: 50 KG <br>
+            Fuerza del Golpe Recibido: 100 KG (Sin hacer la regla x2) <br>
+            Los 50 (tu fuerza) se le resta a la fuerza del golpe recibido (100 KG) =Quedando 50 KG <br>
+            Esos 50 KG (Restantes tras la anterior procedimiento) son duplicados por la regla del "Fuerza x2"<br>
+            Daño Total del Golpe recibido: 100 U/C</p>
+            <p>En el foro poseemos una calculadora que pueden utilizar para calcular el daño. Siempre estará actualizada a como esté el sistema. Si en algún momento no está funcionando, por favor avísenos. <a href="https://docs.google.com/spreadsheets/d/14K31k1lm2RznBUXwDqngLtmcNZ356jBdXZdCjo6-dy4/edit#gid=0" class="clickButtonSistema" target="_blank">Click acá para acceder a la calculadora.</a></p>
+          </div>
+        </div>
+        <label class="inputSistema" for="dañoSistema"> <img src="../images/plantillas/daño.webp" class="ImgSistema" alt=""></label>
+  
+  
+        <input class="resistenciaInputSistema inputIconGeneral" type="radio" id="resistenciaSistema" name="inputSistemas">
+        <div class="backgroundResistenciaSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type="radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextRespeto"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide">Sistema de Resistencia</span> En el sistema de chakra se explicó que entre más disminuya tu chakra, más te descompones físicamente. Por eso en el anime se veía que a medida que se agota el chakra, el usuario se nota más cansado. Es bastante lógico que cuando tú “resistencia” se vaya disminuyendo, tu cuerpo comience a debilitarse, sentirse pesado e incluso comiences a sufrir problemas para respirar, dolores fuertes, etc. <br>
+          Tomen en cuenta que puedes tener síntomas adicionales dependiendo del daño que te hagan, como por ejemplo que te arda la mano porque se quemó, cosa que no sentías cuando estabas al 100% de chakra o comenzar a sufrir calambres por golpes, etc. Esto bien se debe especificar de manera personal para el realismo que quieras poner en tu roleplay. <br>
+          Aquí dispongo la tabla que funciona para mostrar como se encontrara tu personaje dependiendo de cuanto chakra le quede:
+          <ul>
+            <li><span id="infoImportanteBoldSistemas">100% Chakra Restante:</span> Aquí estas completamente lleno de chakra, por ello no tendrás problemas.</li>
+            <li><span id="infoImportanteBoldSistemas">35% Chakra Restante:</span> Aquí empezaras a sentirte más agotado. Tu V.M se reduce un 10% y tus reflejos un 5%.</li>
+            <li><span id="infoImportanteBoldSistemas">15% Chakra Restante:</span> Estarás más exhausto, además de lo anterior, tu fuerza se reduce un 15%.</li>
+            <li><span id="infoImportanteBoldSistemas">5% Chakra Restante:</span> No podrás ni moverte bien de lo cansado. Tu única salvación es recargar chakra.</li>
+            <li><span id="infoImportanteBoldSistemas">0% Chakra Restante:</span> Quedas inconsciente a no ser que poseas alguna técnica que lo evite.</li> 
+            <li><span id="infoImportanteBoldSistemas">Si te siguen atacando luego de estar en 0%:</span> Si sigues recibiendo más y más daño luego de llegar a 0%, puedes morir.</li>
+          </ul>
+          </div>
+        </div>
+        <label class="inputSistema" for="resistenciaSistema"> <img src="../images/plantillas/resistencia.webp" class="ImgSistema" alt=""></label>
+    </section>
+
+
+    <footer>Todos los derechos de autor estan reservados hacia sus debidos creadores. El grupo es y siempre será un sitio de entrentenimiento literario. Las historias y sistemas son originarios de las mismas personas que participan en el foro. Creador &copy;Isaac Gonzalez</footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>

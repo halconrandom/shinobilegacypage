@@ -158,6 +158,7 @@ body {
   left: 388px;
   width: 485px;
   height: 267px;
+  z-index: 1;
 }
 
 #tituloCaruselText{
@@ -251,6 +252,430 @@ footer{
 
 
 
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*! SISTEMAS CODE */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+.iconosSistemasGeneral{ /* ESTO CONTROLA LOS ICONOS DEL GRID PARA LUEGO VOLVERLOS SELECTORES */
+  display: grid;
+  margin-top: 10px;
+  margin-left: 5px;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 225px 225px 225px 225px 225px;
+
+}
+.inputIconGeneral{ /* ? Esto es para ocultar los radios*/
+  display: none;
+}
+.ImgSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+  max-width: 214px;
+  max-height: 214px;
+  border-radius: 10px;
+}
+.resetExitInput{
+  display: none;
+}
+.resetExitIcon{
+  position: relative;
+  left: 340px;
+  cursor: pointer;
+  border: #000 2px solid;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.resetExitIcon:hover{
+  background-color: #FFFFFF;
+}
+  /*  */
+  /* ! ESTADISTTICAS */
+  /*  */
+
+.backgroundEstadisticaSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  opacity: 0;
+  position: fixed;
+  width: 390px;
+  height: 815px;
+  left: 2000px;
+  top: 80px;
+  background:rgba(30, 16, 20, 0.5);
+  border-radius: 15px;
+  z-index: 3;
+}
+@keyframes slide {
+  100% {left: 1509px;}
+}
+.estadisticaInputSistema:checked ~ .backgroundEstadisticaSistemaSlide{ /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards;
+}
+
+.sistemaTextDescripcion #tituloSistemaSlide{ /* ! ESTO CONTROLA TODOS LOS TITULOS */
+  position: relative;
+  align-items: center;
+  text-align: center;
+  top: -40px;
+  display: block;
+  font-family: Naruto;
+  font-size: 24px;
+  width: 100%;
+  color: #FFFFFF;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.sistemaTextDescripcion{ /* ? ESTO CONTROLA TODOS LOS TEXTOS DESCRIPTIVOS DE LOS SISTEMAS*/
+  display: block;
+  font-family: Cabin;
+  text-align: justify;
+  color: white;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 380px;
+  height: 760px;
+  overflow-y: scroll;
+}
+.sistemaTextDescripcion img{
+  border-radius: 10px;
+}
+/* ! */
+/* ! ENTRE LOS COMENTARIOS ROJOS ES PARA EL SIDEBAR DE LA BARRA LATERAL */
+.sistemaTextDescripcion::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.sistemaTextDescripcion:-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+.sistemaTextDescripcion:-webkit-scrollbar-thumb {
+  background-color: #dfdfdf;
+  border-radius: 10px;
+}
+
+/* ! */
+/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */
+
+/* RESPETO SISTEMA */
+
+.RespetoInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+  position: relative;
+  max-width: 214px;
+  max-height: 214px;
+  left: 112px;
+  top: 339px;
+  border-radius: 10px;
+}
+.backgroundRespetoSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  opacity: 0;
+  position: fixed;
+  width: 390px;
+  height: 815px;
+  left: 2000px;
+  top: 80px;
+  background:rgba(30, 16, 20, 0.5);
+  border-radius: 15px;
+  z-index: 3;
+}
+@keyframes slide {
+  100% {left: 1509px;}
+}
+.RespetoInputSistema:checked ~ .backgroundRespetoSistemaSlide{ /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards;
+}
+
+/* CHAKRA SISTEMA */
+
+.ChakraInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+  position: relative;
+  max-width: 214px;
+  max-height: 214px;
+  left: 112px;
+  top: 339px;
+  border-radius: 10px;
+}
+.backgroundChakraSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  opacity: 0;
+  position: fixed;
+  width: 390px;
+  height: 815px;
+  left: 2000px;
+  top: 80px;
+  background:rgba(30, 16, 20, 0.5);
+  border-radius: 15px;
+  z-index: 3;
+}
+@keyframes slide {
+  100% {left: 1509px;}
+}
+.ChakraInputSistema:checked ~ .backgroundChakraSistemaSlide{ /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards;
+}
+
+/* SENJUTSU SISTEMA */
+
+.senjutsuInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+  position: relative;
+  max-width: 214px;
+  max-height: 214px;
+  left: 112px;
+  top: 339px;
+  border-radius: 10px;
+}
+.backgroundSenjutsuSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  opacity: 0;
+  position: fixed;
+  width: 390px;
+  height: 815px;
+  left: 2000px;
+  top: 80px;
+  background:rgba(30, 16, 20, 0.5);
+  border-radius: 15px;
+  z-index: 3;
+}
+@keyframes slide {
+  100% {left: 1509px;}
+}
+.senjutsuInputSistema:checked ~ .backgroundSenjutsuSistemaSlide{ /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards;
+}
+
+/* REFLEJOS SISTEMA */
+
+.reflejosInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+  position: relative;
+  max-width: 214px;
+  max-height: 214px;
+  left: 112px;
+  top: 339px;
+  border-radius: 10px;
+}
+.backgroundreflejosSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  opacity: 0;
+  position: fixed;
+  width: 390px;
+  height: 815px;
+  left: 2000px;
+  top: 80px;
+  background:rgba(30, 16, 20, 0.5);
+  border-radius: 15px;
+  z-index: 3;
+}
+@keyframes slide {
+  100% {left: 1509px;}
+}
+.reflejosInputSistema:checked ~ .backgroundreflejosSistemaSlide{ /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards;
+}
+
+/* BUFFS SISTEMA */
+
+.buffsInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+  position: relative;
+  max-width: 214px;
+  max-height: 214px;
+  left: 112px;
+  top: 339px;
+  border-radius: 10px;
+}
+.backgroundBuffsSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  opacity: 0;
+  position: fixed;
+  width: 390px;
+  height: 815px;
+  left: 2000px;
+  top: 80px;
+  background:rgba(30, 16, 20, 0.5);
+  border-radius: 15px;
+  z-index: 3;
+}
+@keyframes slide {
+  100% {left: 1509px;}
+}
+.buffsInputSistema:checked ~ .backgroundBuffsSistemaSlide{ /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards;
+}
+
+
+/* DAÑO SISTEMA */
+
+.dañoInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+  position: relative;
+  max-width: 214px;
+  max-height: 214px;
+  left: 112px;
+  top: 339px;
+  border-radius: 10px;
+}
+.backgroundDañoSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  opacity: 0;
+  position: fixed;
+  width: 390px;
+  height: 815px;
+  left: 2000px;
+  top: 80px;
+  background:rgba(30, 16, 20, 0.5);
+  border-radius: 15px;
+  z-index: 3;
+}
+@keyframes slide {
+  100% {left: 1509px;}
+}
+.dañoInputSistema:checked ~ .backgroundDañoSistemaSlide{ /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards;
+}
+
+
+/* RESISTENCIA DE CHAKRA SISTEMA */
+
+.resistenciaInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+  position: relative;
+  max-width: 214px;
+  max-height: 214px;
+  left: 112px;
+  top: 339px;
+  border-radius: 10px;
+}
+.backgroundResistenciaSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  opacity: 0;
+  position: fixed;
+  width: 390px;
+  height: 815px;
+  left: 2000px;
+  top: 80px;
+  background:rgba(30, 16, 20, 0.5);
+  border-radius: 15px;
+  z-index: 3;
+}
+@keyframes slide {
+  100% {left: 1509px;}
+}
+.resistenciaInputSistema:checked ~ .backgroundResistenciaSistemaSlide{ /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards;
+}
+
+/* HERIDAS SISTEMA */
+
+.heridasInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+  position: relative;
+  max-width: 214px;
+  max-height: 214px;
+  left: 112px;
+  top: 339px;
+  border-radius: 10px;
+}
+.backgroundHeridasSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  opacity: 0;
+  position: fixed;
+  width: 390px;
+  height: 815px;
+  left: 2000px;
+  top: 80px;
+  background:rgba(30, 16, 20, 0.5);
+  border-radius: 15px;
+  z-index: 3;
+}
+@keyframes slide {
+  100% {left: 1509px;}
+}
+.heridasInputSistema:checked ~ .backgroundHeridasSistemaSlide{ /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards;
+}
+
+
+
+
+
+
+
+.hrSistemas{
+  width: 75%;
+}
+
+#ejemploChakra1{
+  display: block;
+  color: yellow;
+  border: 1px dashed #ff0000;
+  background: rgba(155,111,0,0.35);
+}
+#ejemploChakra2{
+  display: block;
+  color: rgb(127, 124, 124);
+  border: 1px dashed rgb(79, 26, 30);
+  background: rgba(128, 38, 41, 0.35);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+#infoImportanteSistemas{ /* ! ESTO CONTROLA LOS TEXTOS IMPORTANTES*/
+  color: rgb(8, 128, 24);
+  text-decoration: underline;
+}
+#infoImportanteBoldSistemas{ /* ! ESTO CONTROLA LOS TEXTOS TITULO BOLD*/
+  font-weight: bold;
+  color: aqua;
+}
+#infoImportanteAvisos{
+  font-weight: bold;
+  color: rgb(193, 145, 161);
+}
+#desaparecerlista{
+  list-style: none;
+}
+
+.clickButtonSistema{
+  color: rgb(202, 206, 7);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  */
 /*  */
 /*  */
@@ -296,6 +721,13 @@ footer{
   .rectangleObjetsGeneral{
     position: relative;
     left: 351px;
+  }
+  .backgroundSistemasGeneral{
+    background:rgb(30, 16, 20);
+    
+  }
+  @keyframes slide {
+    100% {left:860px;}
   }
 }
 @media (min-width: 1280px) {
@@ -360,8 +792,15 @@ footer{
     top: 299px;
     z-index: 1;
   }
+  .backgroundSistemasGeneral{
+    background:rgba(30, 16, 20);
+  }
 
 }
+@media (max-width: 768px){
+  @keyframes slide {
+    100% {left:369px;}
+  }
 @media (max-width: 485px){
   .rectangleInicio{
     /* top: -30px; */
@@ -372,7 +811,35 @@ footer{
   .rectangleObjetsGeneral a img{
     width: 428px;
   }
+
+  /* Sistemas */
+  .iconosSistemasGeneral{ /* ESTO CONTROLA LOS ICONOS DEL GRID PARA LUEGO VOLVERLOS SELECTORES */
+    display: grid;
+    justify-content: center;
+    grid-template-columns:53% 53%;
+    grid-template-rows: 191px 191px 191px 191px 191px;
+  }
+  .ImgSistema{
+    max-width: 180px;
+    max-height: 180px;
+  }
+
+  @keyframes slide {
+    100% {left:19px;}
+  }
+}
+@media (width: 768px){
+  /* SISTEMAS */
+  .iconosSistemasGeneral{ /* ESTO CONTROLA LOS ICONOS DEL GRID PARA LUEGO VOLVERLOS SELECTORES */
+    display: grid;
+    justify-content: center;
+    grid-template-columns:26% 26% 26% 26%;
+    grid-template-rows: 191px 191px 191px 191px 191px;
+  }
+  .ImgSistema{
+    max-width: 180px;
+    max-height: 180px;
+  }
 }
 
-
-
+}
