@@ -23,21 +23,27 @@
     </div>
     <nav class="">
       <div class="navegadorGeneral">
-        <img src="./images/icon.png" alt="icon" class="iconoNav"/>
+        <img src="../images/icon.png" alt="icon" class="iconoNav"/>
         <hr class="hrNav">
         <ul class="linksNavegador ">
-          <li id="InicioNav"><img  src="../images/slideicon.png" alt=""><a id="hoverIconNav" href="">Inicio</a></li>
-          <li id="FichasNav"><img src="../images/slideicon.png" alt=""><a id="hoverIconNav"  href="">Fichas</a></li>
-          <li id="SistemasNav"><img id="SistemasIcon" src="../images/slideicon.png" alt=""><a  id="hoverIconNav" href="">Sistemas</a></li>
-          <li id="TalleresNav"><img id="TalleresIcon" src="../images/slideicon.png" alt=""><a  id="hoverIconNav" href="">Talleres</a></li>
-          <li id="EventosNav"><img id= "EventosIcon" src="../images/slideicon.png" alt=""><a id="hoverIconNav" href="">Eventos</a></li>
+          <li id="InicioNav"><img  src="../images/slideicon.png" alt=""><a id="hoverIconNav" href="../index.html">Inicio</a></li>
+          <li id="FichasNav"><img src="../images/slideicon.png" alt=""><a id="hoverIconNav"  href="../links/fichas.html">Fichas</a></li>
+          <li id="SistemasNav"><img id="SistemasIcon" src="../images/slideicon.png" alt=""><a  id="hoverIconNav" href="../links/sistemas.html">Sistemas</a></li>
+          <li id="TalleresNav"><img id="TalleresIcon" src="../images/slideicon.png" alt=""><a  id="hoverIconNav" href="../links/talleres.html">Talleres</a></li>
+          <li id="EventosNav"><img id= "EventosIcon" src="../images/slideicon.png" alt=""><a id="hoverIconNav" href="../links/eventos.html">Eventos</a></li>
         </ul>
       </div>
     </nav>
     <section class="rectangleInicio">
       <div class="squareDescripcion">
-        <h3 class="tituloPaginaGeneral">Bienvenido a <br> Shinobi Legacy Neo Afterlife</h3>
-        <p class="descripcionPaginaGeneral">“Somos las cenizas de un fenix que alguna vez fue el más brillante de todos”. Veinte años han pasado desde que la anterior generación logró vencer a Amon, Precursor de la Creación en donde se logró saber que más allá de todo lo conocido existen seres inentendibles que fueron los creadores de todo, sumado al intento de invasión de Letz Batalion sobre las naciones, conllevó a que el mundo ninja se fracturará de manera increible, diezmando la poblacion a niveles inimaginables. Muchos de los ninjas protagonistas de la generación lograron recuperar lo que muchos trabajaron para construir y posteriormente lograron empezar a convivir más en calma al punto de poder crear sus propias familias, dando bienvenida a la nueva generación.</p>
+        <h3 class="tituloPaginaGeneral tituloPaginaFichas">Fichas</h3>
+        <p class="descripcionPaginaGeneral descripcionPaginaFichas">Abajo podras encontrar todas las fichas creadas por ti. Elige una y editala si es necesario, no te olvides de adjuntar todos tus registros para que no haya nada invalido.</p>
+        <p class="descripcionPaginaFichas2">Para crear una nueva ficha elige una de las opciones abajo</p>
+        <div class="botonsFichas">
+          <div class="botonPJ"><a id="botontextPJ" href="">Ficha PJ</a></div>
+          <div class="botonNPC"><a id="botontextNPC" href="">Ficha NPC</a></div>
+          <div class="botonPC"><a id="botontextPC" href="">Ficha PC</a></div>
+        </div>
       </div>
       <!-- CARUSEL DE TEXTO -->
       <div id="carouselGeneral" class="carousel slide" data-bs-ride="false">
@@ -64,10 +70,8 @@
           <div class="carousel-item">
             <img src="../images/mayonesa.webp" class="d-block w-100" alt="...">
             <div class="carousel-caption d-block">
-              <div class="carousel-caption d-block">
-                <h5 id="tituloCaruselText">¡Update de Armas!</h5>
-                <p id="descripcionCaruselText">¡Es oficial! ¡La mayonesa ya es canonicamente considerada una arma ninja dentro del lore de Shinobi! ¡Consigue descuentos en la tienda por tiempo limitado!</p>
-              </div>
+              <h5 id="tituloCaruselText">¡Update de Armas!</h5>
+              <p id="descripcionCaruselText">¡Es oficial! ¡La mayonesa ya es canonicamente considerada una arma ninja dentro del lore de Shinobi! ¡Consigue descuentos en la tienda por tiempo limitado!</p>
             </div>
           </div>
         </div>
@@ -82,7 +86,30 @@
       </div>
     </section>
     <section class="rectangleObjetsGeneral">
-
+      <div class="pestañaDatosFicha">
+        <div class="formatoFicha">
+          <div id="fotoPersonajeFicha">Foto Personaje</div>
+          <div id="opcionesFicha">
+            <a id="editarFichaOption" href="">Editar Ficha</a>
+            <a id="borrarFichaOption" href="">Borrar Ficha</a>
+          </div>
+          <div class="nombrePersonajeFicha">[Nombre del PJ/NPC/PC]</div>
+          <div class="labelDatosBasicosFicha">Datos Basicos</div>
+          <div class="datosbasicosInfoFicha">
+            <div class="edadInfoFicha labelbackgroundInfo">Edad:</div>
+            <div class="clanInfoFicha labelbackgroundInfo">Clan:</div>
+            <div class="alturaInfoFicha labelbackgroundInfo">Altura::</div>
+            <div class="pesoInfoFicha labelbackgroundInfo">Peso:</div>
+            <div class="anaciInfoFicha labelbackgroundInfo">Aldea de Nacimiento:</div>
+            <div class="aresiInfoFicha labelbackgroundInfo">Aldea de Residencia:</div>
+            <div class="bandoInfoFicha labelbackgroundInfo">Bando:</div>
+            <div class="profesionInfoFicha labelbackgroundInfo">Profesión:</div>
+            <div class="sangreInfoFicha labelbackgroundInfo">Tipo de Sangre:</div>
+            <div class="mascotaInfoFicha labelbackgroundInfo">Mascota:</div>
+            <div class="apodoInfoFicha labelbackgroundInfo">Apodos:</div>
+          </div>
+        </div>
+      </div>
     </section>
 
 

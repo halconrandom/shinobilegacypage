@@ -251,6 +251,306 @@ footer{
 
 
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*! FICHAS CODE */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+.tituloPaginaFichas{
+  padding-top: 20px;
+}
+.descripcionPaginaFichas{
+  padding-top: 20px;
+}
+
+.botonPJ{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 200px;
+  left: 29px;
+  width: 88px;
+  height: 34px;
+  background: #4F1A1E;
+  border-radius: 10px;
+}
+.botonNPC{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 200px;
+  left: 126px;
+  width: 88px;
+  height: 34px;
+  background: #4F1A1E;
+  border-radius: 10px;
+}
+.botonPC{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 200px;
+  left: 223px;
+  width: 88px;
+  height: 34px;
+  background: #4F1A1E;
+  border-radius: 10px;
+}
+#botontextPJ{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+#botontextNPC{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+#botontextPC{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.descripcionPaginaFichas2{
+  font-family: Cabin;
+  text-align: justify;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.fichaPrimerSection{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.pestañaDatosFicha{
+  position: relative;
+  width: 700px;
+  height: 1120px;
+  background: rgba(127, 124, 124, 0.5);
+  border-radius: 20px;
+}
+#fotoPersonajeFicha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  left: 75px;
+  top: 17px;
+  background: #D9D9D9;
+}
+#opcionesFicha{
+  position: relative;
+  width: 114px;
+  height: 22px;
+  left: 196px;
+  top: 573px;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+#editarFichaOption{
+  position: absolute;
+  text-decoration: none;
+  color: #090506;
+}
+#borrarFichaOption{
+  position: absolute;
+  left: 200px;
+  width: 124px;
+  height: 22px;
+  text-decoration: none;    
+  color: #090506;
+}
+#opcionesFicha a:hover{
+  color: white;
+}
+.nombrePersonajeFicha{
+  position: absolute;
+  width: 700px;
+  height: 57px;
+  top: 601px;
+  background: #090506;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+/*  */
+/* DATOS BASICOS FICHA */
+/*  */
+.labelDatosBasicosFicha{
+  position: absolute;
+  width: 161px;
+  height: 45px;
+  top: 683px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4F1A1E;
+  border-radius: 0px 15px 15px 0px;
+  color: #FFFFFF;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+.datosbasicosInfoFicha{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 312px;
+  height: 39px;
+}
+.labelbackgroundInfo{
+  background: #090506;
+  border-radius: 10px;
+  padding-left: 20px;
+  color: #FFFFFF;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content:left;
+}
+.edadInfoFicha{
+  position: absolute;
+  width: 312px;
+  height: 39px;
+  left: 38px;
+  top: 759px;
+}
+.clanInfoFicha{
+  position: absolute;
+  width: 312px;
+  height: 39px;
+  left: 350px;
+  top: 759px;
+}
+.alturaInfoFicha{
+  position: absolute;
+  width: 312px;
+  height: 39px;
+  left: 38px;
+  top: 803px;    
+}
+.pesoInfoFicha{
+  position: absolute;
+  width: 312px;
+  height: 39px;
+  left: 350px;
+  top: 803px; 
+}
+.anaciInfoFicha{
+  position: absolute;
+  width: 312px;
+  height: 39px;
+  left: 38px;
+  top: 847px;
+}
+.aresiInfoFicha{
+  position: absolute;
+  width: 312px;
+  height: 39px;
+  left: 350px;
+  top: 847px;
+}
+.bandoInfoFicha{
+  position: absolute;
+  width: 312px;
+  height: 39px;
+  left: 38px;
+  top: 891px;
+}
+.profesionInfoFicha{
+  position: absolute;
+  width: 312px;
+  height: 39px;
+  left: 350px;
+  top: 891px;
+}
+.sangreInfoFicha{
+  position: absolute;
+  width: 312px;
+  height: 39px;
+  left: 38px;
+  top: 935px;
+}
+.mascotaInfoFicha{
+  position: absolute;
+  width: 312px;
+  height: 39px;
+  left: 350px;
+  top: 935px;
+}
+.apodoInfoFicha{
+  position: absolute;
+  width: 623px;
+  height: 89px;
+  left: 38px;
+  top: 979px;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*  */
@@ -266,6 +566,13 @@ footer{
 /*  */
 /*  */
 /*  */
+
+.tituloPaginaSistemas{
+  padding-top: 20px;
+}
+.descripcionPaginaSistemas{
+  padding-top: 30px;
+}
 
 .iconosSistemasGeneral{ /* ESTO CONTROLA LOS ICONOS DEL GRID PARA LUEGO VOLVERLOS SELECTORES */
   display: grid;
@@ -654,19 +961,91 @@ footer{
 
 
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*! TALLERES CODE */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+.tituloPaginaTalleres{
+  padding-top: 20px;
+}
+.descripcionPaginaTalleres{
+  padding-top: 40px;
+}
 
 
 
 
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*! EVENTOS CODE */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+.tituloPaginaEventos{
+  padding-top: 20px;
+}
+.descripcionPaginaEventos{
+  padding-top: 40px;
+}
 
 
+.rectangleObjetsGeneral{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 29px;
+}
+.EventoFondo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/plantillas/fondoEventos.webp);
+  border-radius: 10px ;
+  width: 320px;
+  height: 449px;
+  z-index: 3;
+}
+.tituloEvento{
+  color: #dfdfdf;
+  font-family: Naruto;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(32, 14, 17, 0.70);
+}
+.descripcionEvento{
+  position: relative;
+  top: 117px;
+  color: #dfdfdf;
+  text-align: justify;
+  font-family: Cabin;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(32, 14, 17, 0.70);
 
-
-
-
-
-
+}
 
 
 
@@ -827,6 +1206,20 @@ footer{
   @keyframes slide {
     100% {left:19px;}
   }
+  /* FICHAS */
+
+  .fondoFicha{
+    margin-top: 220px;    
+    transform: rotate(90deg);
+  }
+  .fondoFotoPerfil{
+    transform: rotate(90deg);
+  }
+
+
+
+
+
 }
 @media (width: 768px){
   /* SISTEMAS */
