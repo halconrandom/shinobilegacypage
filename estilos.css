@@ -1020,7 +1020,7 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(./images/plantillas/fondoEventos.webp);
+  background-image: url(../images/plantillas/fondoEventos.webp);
   border-radius: 10px ;
   width: 320px;
   height: 449px;
