@@ -21,19 +21,46 @@
     <div class="navBarCellphone">
 
     </div>
-    <nav class="">
-      <div class="navegadorGeneral">
-        <img src="../images/icon.png" alt="icon" class="iconoNav"/>
-        <hr class="hrNav">
-        <ul class="linksNavegador ">
-          <li id="InicioNav"><img  src="../images/slideicon.png" alt=""><a id="hoverIconNav" href="../index.html">Inicio</a></li>
-          <li id="FichasNav"><img src="../images/slideicon.png" alt=""><a id="hoverIconNav"  href="../links/fichas.html">Fichas</a></li>
-          <li id="SistemasNav"><img id="SistemasIcon" src="../images/slideicon.png" alt=""><a  id="hoverIconNav" href="../links/sistemas.html">Sistemas</a></li>
-          <li id="TalleresNav"><img id="TalleresIcon" src="../images/slideicon.png" alt=""><a  id="hoverIconNav" href="../links/talleres.html">Talleres</a></li>
-          <li id="EventosNav"><img id= "EventosIcon" src="../images/slideicon.png" alt=""><a id="hoverIconNav" href="../links/eventos.html">Eventos</a></li>
-        </ul>
-      </div>
-    </nav>
+  </div>
+  <nav class="">
+    <div class="navegadorGeneral">
+      <img src="../images/icon.png" alt="icon" class="iconoNav"/>
+      <h3 class="tituloMenuGeneral">Menu General</h3>
+      <hr class="hrNav">
+      <ul class="linksNavegador ">
+        <li>
+          <a href="../index.html">
+            <img class="imgNavIcon" src="../images/iconosMenu/inicioIcon.png" alt="">
+            <span class="textLinkNav">Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a href="./fichas.html">
+            <img class="imgNavIcon" src="../images/iconosMenu/fichasIcon.png" alt="">
+            <span class="textLinkNav">Fichas</span>
+          </a>
+        </li>
+        <li>
+          <a href="./sistemas.html">
+            <img class="imgNavIcon" src="../images/iconosMenu/sistemasIcon.png" alt="">
+            <span class="textLinkNav">Sistemas</span>
+          </a>
+        </li>
+        <li>
+          <a href="./talleres.html">
+            <img class="imgNavIcon" src="../images/iconosMenu/talleresIcon.png" alt="">
+            <span class="textLinkNav">Talleres</span>
+          </a>
+        </li>
+        <li>
+          <a href="./eventos.html">
+            <img class="imgNavIcon" src="../images/iconosMenu/eventosIcon.png" alt="">
+            <span class="textLinkNav">Eventos</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
     <section class="rectangleInicio">
       <div class="squareDescripcion">
@@ -303,6 +330,260 @@
           </div>
         </div>
         <label class="inputSistema" for="resistenciaSistema"> <img src="../images/plantillas/resistencia.webp" class="ImgSistema" alt=""></label>
+
+
+        <input class="heridasInputSistema inputIconGeneral" type="radio" id="heridasSistema" name="inputSistemas">
+        <div class="backgroundHeridasSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type="radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextHeridas"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide">Sistema de Heridas</span> Usando la lógica, es obvio que cuando nuestro personaje recibe daño hay veces en la que este podría recibir una herida física. Este sistema se encargará de establecer un daño por turno de dichas heridas.
+            <ul>
+              <li><span id="infoImportanteBoldSistemas">Hipotermia/Bajas Temperaturas:</span> Si en la descripción del rol se define el ambiente de tal manera o sucede algún cambio de terreno esto entra en juego. Así mismo suponiendo que estas en una zona del mundo donde haga demasiado frio como en Hokkyokugakure, Yukigakure o Ishigakure.<br> <span id="infoImportanteSistemas">Daño por turno: -400 U/C</span> </li>
+              <hr class="hrSistemas">
+              <li><span id="infoImportanteBoldSistemas">Cortes/Hemorragias Leves: </span>El corte de una espada u objeto filoso es cuanto menos algo de lo que puede ocurrir en cualquier momento en una pelea o entrenamiento. Entra en juego cuando un objeto filoso roza tu piel y este no provoca tanto daño.<br><span id="infoImportanteSistemas">Daño por turno: -300 U/C</span></li>
+              <hr class="hrSistemas">
+              <li><span id="infoImportanteBoldSistemas">Cortes/Hemorragias Graves: </span>Al igual que en el anterior, esto podría ocurrir en una situación más grave donde el filo de un arma te atraviese seriamente o te arranquen una extremidad. Hay muchas situaciones que podrían desencadenar a una hemorragia grave. Para ello podes contactar un administrador para deducir si se llega a ello o no.<br><span id="infoImportanteSistemas">Daño por turno: -1.000 U/C</span></li>
+              <hr class="hrSistemas">
+              <li><span id="infoImportanteBoldSistemas">Fracturas: </span>Una fractura se lleva a cabo cuando se ejerce el mas de la fuerza que uno pueda soportar sobre una parte en específica del cuerpo. Hay distintos tipos de fractura que podrías sufrir y cada una tiene causas y un daño en específico:
+                <ol>
+                  <li>Fractura Oblicua: La fractura más común de todas. Cuando en una zona del cuerpo del usuario sufre un daño x3 a su fuerza base, el hueso tiende a romperse en dos. Es decir que, si tienes 100 de fuerza y alguien te golpea con 300 de fuerza sobre una zona, podría provocarte una fractura de este tipo.</li>
+                  <li>Fractura Espiral: Esta es de menor grado que la anterior, pero podría ser provocada de la misma forma. Todo depende en la forma en que es golpeado y la zona en donde lo fue realizado. Pues no es lo mismo una fractura en la pelvis que en un brazo, en cuyo caso en la zona de la pelvis seria espiral y en el brazo, oblicua. (Espero darme a entender). La diferencia entre la oblicua y esta es que la oblicua el hueso se rompe en dos y en esta solo sucede una fractura y el hueso se sigue manteniendo unido.</li>
+                  <li>Fractura Conminuta: Esta es la peor fractura de todas y es provocada cuando se le ejerce una fuerza x4 sobre una zona del cuerpo independientemente de donde sea o como es dado. El hueso es destruido por completo y es fragmentado en pedazos realmente pequeños, casi como si fuera pulverizado. Esta es la más peligrosa y letal pues al suceder, no tiene reparo más que perder la zona o tener que darle una prótesis.</li>
+                </ol>  
+              <span id="infoImportanteSistemas">Daño por Turno de Oblicua/Espiral: 600 U/C</span> <br> <br><span id="infoImportanteSistemas">Daño por Turno de Conminuta: Perdida de la zona o miembro, 1.000 U/C</span></li>
+              <hr class="hrSistemas">
+              <li><span id="infoImportanteBoldSistemas">Contacto con Electricidad/Parálisis: </span> El contacto de electricidad es algo peligroso pues puede llegar a paralizar al oponente por varios turnos. Esto es algo complejo al igual que con el contacto al fuego pues todo depende en la cantidad de chakra que se le ponga al jutsu de elemento rayo. Claramente esto varía de la descripción de la técnica pues no es lo mismo un jutsu enfocado a paralizar al oponente a uno como el Kirin.<br>Mayormente cuando se le pone al menos un 10% del chakra restante del contrario a una técnica de parálisis eléctrica (ósea que si tu oponente tiene 100 de chakra y tu pon 10 de chakra a una parálisis), el que sufre de la técnica podría quedar paralizado por medio turno, dándole ventaja al contrario de varias cosas. Esto aumenta a ser un turno completo solo si el usuario emplea un 30% del chakra restante del usuario contrario a la parálisis, (siguiendo el mismo ejemplo, seria 30 de chakra). <br> <span id="infoImportanteSistemas">Daño por turno: 500 U/C</span><br>
+              <span id="infoImportanteBoldSistemas">Nota Adicional:</span> Por si no quedó claro, el daño por turno de esta es la secuela de la electricidad que es dejada en el usuario. Puede extenderse dependiendo de la cantidad del chakra que le es colocado de la siguiente manera:
+              <ul>
+                <li>Desde 100 U/C a 6.000 U/C: Solo dura un turno luego de recibir el daño.</li>
+                <li>Desde 6.000 U/C a 12.000 U/C: Dura dos turnos luego de recibir el daño.</li>
+                <li>Desde 12.000 U/C a 24.000 U/C: Dura tres turnos luego de recibir el daño.</li>
+                <li>Desde 24.000 U/C a 36.000 U/C: Dura cuatro turnos luego de recibir el daño.</li>
+              </ul>
+              A partir de este punto te toca preguntar a un administrador cuantos turnos dura los efectos posteriores. Sin embargo, se toma en cuenta que, si el chakra empleado en una parálisis hacia un contrincante es el 75% de su chakra base, este lo matará.</li>
+              <hr class="hrSistemas">
+              <li><span id="infoImportanteBoldSistemas">Contacto con Fuego/Quemaduras: </span>El contacto de fuego es algo peligroso pues puede llegar a quemas o incluso calcinar al oponente. Al igual que con el contacto a la electricidad todo depende en la cantidad de chakra que se le ponga al jutsu de elemento fuego. Claramente esto varía de la descripción de la técnica pues hay técnicas especializadas a calcinar al enemigo o para simplemente quemarlo. <br>Mayormente cuando se le pone al menos un 15% del chakra restante del contrario a una técnica de fuego, el que sufre de la técnica podría quemarse y sufrir por la quemadura. Esto podría ser ventajoso para el usuario y claramente incómodo y doloroso para quien la sufre.<br> <span id="infoImportanteSistemas">Daño por turno: 500 U/C</span> <br> <span id="infoImportanteBoldSistemas">Nota Adicional:</span> Por si no quedó claro, el daño por turno de esta es la secuela de la quemadura que es dejada en el usuario. Puede extenderse dependiendo de la cantidad del chakra que le es colocado de la siguiente manera:
+                <ul>
+                  <li>Se toma en cuenta que, si el chakra empleado en una quemadura hacia un contrincante es un 50% más que el chakra base de un usuario este podría ser calcinado por él.</li>
+                  <li>Mientras que, si solo es el 75% del chakra base, el usuario podría sufrir quemaduras tan graves que podría perder una extremidad en cuyo este fuese el lugar afectado.</li>
+                </ul>
+              </li>
+              <hr class="hrSistemas">
+              <li><span id="infoImportanteBoldSistemas">Hematomas:</span> El usuario obtiene un hematoma debido a que le es ejercido cierta presión sobre una zona del cuerpo. Aunque esto no es mortal y no impide que sigas peleando, si puede llegar a ser incomodo porque suelen doler un poco. Suelen aparecer al recibir un 50% más de fuerza de la que el usuario puede aguantar. <br> <span id="infoImportanteSistemas">Daño por turno: 100 U/C</span></li>
+              <hr class="hrSistemas">
+              <li><span id="infoImportanteBoldSistemas">Heridas Punzantes:</span> Similar al daño por hemorragias leves y graves, esto sucede cuando el sujeto el sujeto es atravesado con algún arma filosa, barra, etc. Vale destacar que depende mucho la zona en donde fue herido pues si por el corazón, claramente morirá. Así mismo si es múltiples veces apuñalado también podría morir (como le pasó a Neji). En cuyo caso hay dos tipos de daños dependiendo del área donde es afectada.<br> <span id="infoImportanteSistemas">Daño por turno si es un área no mortal: 300 U/C</span> <br>
+                <span id="infoImportanteSistemas">Daño por turno si es un área mortal: 800 U/C</span>
+              </li>
+              <hr class="hrSistemas">
+            </ul>
+            <h3 class="tituloAdicional1">Sistema de Duracion de Heridas</h3>
+            <p>Dependiendo del tipo de herida que recibas, habrá un tiempo que la mantendrás hasta recuperarte por completo, esto es para añadirle realismo a la secuencia de rol y para que se tenga más cuidado al recibir este tipo de daños.</p>
+            <ul>
+              <li> <span id="infoImportanteBoldSistemas">Fractura Oblicua: </span>2 Semanas.</li>
+              <li> <span id="infoImportanteBoldSistemas">Fractura Espiral: </span>1 Semana.</li>
+              <li> <span id="infoImportanteBoldSistemas">Fractura Conminuta: </span>Hasta que se reemplace el hueso. Y luego el proceso de recuperación pasara a ser de 2 semanas.</li>
+              <li> <span id="infoImportanteBoldSistemas">Quemaduras leves: </span>24 horas.</li>
+              <li> <span id="infoImportanteBoldSistemas">Quemaduras medianas: </span>2 días.</li>
+              <li> <span id="infoImportanteBoldSistemas">Quemaduras Graves: </span>3 días.</li>
+              <li> <span id="infoImportanteBoldSistemas">Apuñalamiento/Heridas Punzantes: </span>1 Semana.</li>
+              <li> <span id="infoImportanteBoldSistemas">Apuñalamiento en zonas peligrosas: </span>2 semanas tras ser tratado.</li>
+              <li> <span id="infoImportanteBoldSistemas">Hematomas/Moretones: </span>2 días.</li>
+              <li> <span id="infoImportanteBoldSistemas">Hemorragias Leves/Sangramiento Común: </span>Hasta que sea tratado la herida. La recuperación es de 2 días.</li>
+              <li> <span id="infoImportanteBoldSistemas">Hemorragias Graves/Amputación: </span>Hasta que sea tratado la herida a tiempo. La recuperación es de semana y media.</li>
+              <li> <span id="infoImportanteBoldSistemas">Cambio de Ojos: </span>2 Semanas Ciego.</li>
+              <li> <span id="infoImportanteBoldSistemas">Prótesis: </span>2 Semanas de acostumbramiento.</li>
+            </ul>
+            <p id="infoImportanteSistemas">Tomar en cuenta que para recuperarse de estas cosas se debe ir al hospital ninja de una aldea o hacia algún ninja médico especializado.</p>
+            <p id="infoImportanteSistemas">Si tú eres ninja medico te puedes tratar tú mismo ciertas cosas, pero tampoco es que vas a poder hacerte una cirugía tú mismo o cosas así.</p>
+          </div>
+        </div>
+        <label class="inputSistema" for="heridasSistema"> <img src="../images/plantillas/heridas.webp" class="ImgSistema" alt=""></label>
+
+
+        <input class="ataquesCombinadosInputSistema inputIconGeneral" type="radio" id="ataquesCombinadosSistema" name="inputSistemas">
+        <div class="backgroundataquesCombinadosSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type="radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextataquesCombinados"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide" class="ataquesCombinado">Sistema de Ataques Combinados</span> Por preferencias mayores, los ataques combinados son producto de una sincronización entre Invocación e Invocador o dos ninjas que se puedan entender mutuamente al efectuar combinaciones en peleas. A primeras no es fácil poder lograr esto pues se ameritan ciertos aspectos:
+            <ul>
+              <li>Si son técnicas elementales, se toma en cuenta que los elementos se puedan relacionar:
+                <span id="infoImportanteSistemas">Ejemplo: Fuego y Aire, Agua y Rayo etc.</span></li>
+              <li>Hay algunas técnicas como el Doble Corte de Rayo de Opresión Horizontal en donde dos usuarios tienen la misma técnica de ataque cercano y la juntan para crear una mejora de mayor letalidad.</li>
+            </ul>
+            <p>Teniendo en cuenta estas cosas para lograr un ataque combinado, los parámetros de daño son:</p>
+            <ul>
+              <li>Al combinar un ataque ambas partes combinan sus estadísticas de chakra. Es decir que, si un aliado lanza una técnica de viento de 1.000 u/c y yo lo combino con una de fuego de 3.000 U/C, entonces el total de poder de dicha sería de 4.000 U/C.</li>
+              <li>La velocidad se toma de la técnica más rápida sumando un 25% adicional.</li>
+              <li>Si se tratan de combinación de técnicas de Taijutsu (como la anterior expuesta arriba) entonces se suman las fuerzas y se aumenta un 25% pero la velocidad sigue igual.</li>
+            </ul>
+            <p>Obviamente ambos deben de estar de acuerdo con combinar sus técnicas al momento de atacar, o a veces ocurre por accidente (Off-Roll se debe estar conscientes de que combinarán).</p>
+          </div>
+        </div>
+        <label class="inputSistema" for="ataquesCombinadosSistema"> <img src="../images/plantillas/ataquescombinados.webp" class="ImgSistema" alt=""></label>
+
+
+
+        <input class="rangosInputSistema inputIconGeneral" type="radio" id="rangosSistema" name="inputSistemas">
+        <div class="backgroundRangosSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type="radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextRangos"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide">Sistema de Rangos</span> Un ninja debe regirse por las jerarquías de su estándar de aldea. Aquellos estándares definen cuan habilidoso eres y que tan capaz eres para hacer ciertas misiones y aprender ciertas técnicas/habilidades. Si bien en el anime y manga se vieron distintos ninjas de bajo rango practicar técnicas de alto nivel, eso no significa que se pueda hacer en el grupo. Este sistema es para evitar que hayan gennin haciendo técnicas prohibidas por doquier y viajando a diestra y siniestra.
+          <p>Aquí abajo dejaré la tabla de rangos junto a sus restricciones. Tengan esto muy en cuenta para evitar volverse renegados por tonterías. También es necesario que sepan que existen dos tipos de jerarquías, las básicas y avanzadas.</p>
+
+          <hr class="hrSistemas">
+          <p><span id="infoImportanteSistemas">Jerarquía Básica:</span>  Es aquella que destaca por ser desde el nivel mas bajo hasta comienzos del más alto.</p>
+          <ul>
+            <li><span id="infoImportanteBoldSistemas">Gennin: </span>Es el rango ninja más bajo. Los ninjas al graduarse de la academia son asignados a equipos de 3 ninjas de su mismo rango. (Esto difiere mucho de la disponibilidad de maestros y otros del mismo rango. Usualmente se puede interpretar como NPC.)
+            <ul>
+              <li>Un gennin puede aprender técnicas de Rangos E hasta C. (Esto igual trabaja para el nivel de misiones que pueden tomar)</li>
+              <li>Podrán salir de la Aldea, pero no del País a no ser que sean acompañados por un Jounin.</li>
+              <li>Estos son los que menos voz y voto tienen sobre las decisiones de una aldea pues son muy inexperimentados y desconocidos sobre lo que sucede en el mundo exterior a su aldea.</li>
+            </ul>
+            </li>
+            <li><span id="infoImportanteBoldSistemas">Chunnin: </span>Son ninjas quienes están calificados para guiar y velar por la seguridad de otros Ninja. El chunnin tiene que alcanzar un nivel de madurez que primeramente consiste en mostrar dotes de liderazgo y destreza táctica.</li>
+            <p id="ejemploChakra1">Para ascender de Gennin→Chunnin: Tener 75 P.E+Tener al menos diez misiones cumplidas con una antigüedad de una semana+Participar y Pasar los Exámenes de Acenso Ninja.</p>
+            <ul>
+              <li>Un chunnin puede aprender técnicas de Rangos E hasta B. (Esto igual trabaja para el nivel de misiones que pueden tomar)</li>
+              <li>Podrán salir de la aldea, así como visitar otros Países o Aldeas, siempre mediante justificación u orden del Kage. Mayormente bajo la asignación de un rango superior.</li>
+              <li>Ya en este rango podrás comenzar a ejercer cargo de maestro para otros ninjas de bajo rango.</li>
+              <li>Puedes ser un mediador de tu clan si es necesario.</li>
+            </ul>
+            <li><span id="infoImportanteBoldSistemas">Jounnin: </span>Dentro de la jerarquía básica de ninjas, el Jounnin es el más alto de todos, pudiendo ser una figura importante para la aldea.</li>
+            <p id="ejemploChakra1">Para ascender de Chunnin→Jounnin: Tener 200 P.E+Presentar petición de accenso a tu sensei+Participar y pasar los exámenes de acenso Ninja+Tener al menos veinte misiones cumplidas con una antigüedad de una semana+Tener 100% en un estilo de pelea que hayas deseado que sea tu principal+Tener 2 Naturalezas Elementales. (Esta ultima depende si tu PJ es enfocado a algo que no tenga que ver con ninjutsu. Si tu pj no usa ninjutsu por restricciones del sistema, entonces debe tener al menos dos estilos de pelea al 100%)</p>
+            <ul>
+              <li>Un jounnin puede aprender técnicas de Rangos E hasta S. (Esto igual trabaja para el nivel de misiones que pueden tomar)</li>
+              <li>Podrás salir de la aldea bajo tu criterio, siempre que tengas motivos y puedas justificarlo ante el Kage. De no hacerlo podrás recibir sanciones a discreción del mismo. A partir de aquí podrá liderar un pequeño escuadrón de ninjas de menor rango para que te acompañen, claramente bajo permiso del Kage.</li>
+              <li>Estos ninjas son tomados muy en cuenta al tomar decisiones en las aldeas, así como también son muy respetados tanto dentro del clan como en la aldea.</li>
+            </ul>
+          </ul>
+          <hr class="hrSistemas">
+          <p><span id="infoImportanteSistemas">Jerarquía Avanzada:</span>  Son aquellos que comienzan a florecer a ser maestros diestros, líderes y figuras imponentes en el mundo ninja.</p>
+          <ul>
+            <li><span id="infoImportanteBoldSistemas">Jounnin Elite Rango B: </span>Avanzando por el mismo camino de los Jounnin, se puede llegar a ser considero un ninja de elite. Ganado con esmero y trabajo tras cumplir incontables tareas y demostrar un nivel de poder superior al de un ninja jounin común.</li>
+            <p id="ejemploChakra1">Jounnin→Jounnin Elite Rango B: Tener 250 P.E+Tener 100 P.R+Tener al menos veinticinco misiones cumplidas con una antigüedad de una semana+Esto lo tendrá en cuenta tu Kage para considerarte subir a este rango.</p>
+
+            <li><span id="infoImportanteBoldSistemas">Jounnin Elite Rango A: </span>Estos son un rango más alto que los de rango B, siendo considerados como elites retirados de las raíces de ANBU o grandes héroes de guerras y batallas. Se considera un rango muy complicado de conseguir pues se necesita un gran historial para lograrlo. A partir de este rango se puede optar por cazar libremente criminales siempre y cuando se posea un libro bingo.</li>
+            <p id="ejemploChakra1">Jounnin Elite Rango B→Jounnin Elite Rango A: Tener 350 P.E+Tener 200 P.R+Tener al menos treinta misiones cumplidas con una antigüedad de una semana+Decisión del Kage de tu aldea.</p>
+
+            <li><span id="infoImportanteBoldSistemas">Jounnin Elite Rango S: </span>Este se considera el rango más superior de todos, pudiendo incluso comandar elites de ANBU y ser casi igual de prestigiosos que el rango de Sannin. Los Elites de rango S suelen ser grandes aspirantes a Kage, Lideres de Comunidades y son bastante elogiados por sus grandes méritos, sus hazañas y conocimientos.</li>
+            <p id="ejemploChakra1">Jounnin Elite Rango A→Jounnin Elite Rango S: Tener 500 P.E+Tener 300 P.R+Tener al menos cuarenta misiones cumplidas con una antigüedad de una semana+Decisión del Kage de tu aldea.</p>
+
+            <li><span id="infoImportanteBoldSistemas">ANBU: </span>Mejor conocido como el Escuadrón del Infierno, ellos reciben sus órdenes directamente del Kage (aunque si durante la misión se encuentran por un Elite S, puede cambiar), para misiones de alto rango, tales como asesinatos, torturas y rastreos de ninjas desertores o traicioneros.</li>
+            <p id="ejemploChakra1">Chunnin/Jounnin→ANBU: Decisión de tu Kage+Tener al menos 2 naturalezas Elementales (puede variar si no puedes, igual que arriba mencionado)+Tener 100% en un estilo de pelea que hayas deseado que sea tu principal+400 P.E</p>
+            <ul>
+              <li>Los miembros pueden abandonar la organización cuando deseen.</li>
+              <li>Todo ANBU tiene la obligación de obedecer su Kage y cumplir la misión aun si esta es una misión suicida.</li>
+              <li>Dentro de ANBU, tu raza, color, sexo, edad o nombre pasan a ser inexistentes. Dejas de existir completamente de los registros (aunque se mantienen copias resguardadas en secreto)</li>
+            </ul>
+
+            <li><span id="infoImportanteBoldSistemas">Sannin: </span>Este rango se usa para referirse a una persona reconocida por su gran poder, sabiduría, o santidad. Son aquellos ninjas que han ganado tantos méritos mundiales y locales que ya hasta son considerados como el segundo kage de su aldea. Estos ninjas son respetados de una manera extrema por donde vayan.</li>
+            <p id="ejemploChakra1">Rango Cualquiera→Sannin: Tener 750 P.E+Tener 750 P.R+Ser destacado en algo+Tener varios méritos mundiales.</p>
+          </ul>
+
+          <hr class="hrSistemas">
+
+          <p id="infoImportanteSistemas">Existen algunos beneficios en el grupo que te pueden ayudar si eres de rango bajo, dichos serían:</p>
+          <ul>
+            <li>Tu sensei siempre podrá enseñarte una técnica de rango superior al que puedes aprender. Es decir que, si eres Gennin, tu sensei puede enseñarte una técnica de Rango B y así sucesivamente.</li>
+            <li>Los Jounnin y rangos superiores pueden aprender sus técnicas solos sin necesidad de asistir a una biblioteca ninja pero si teniendo conocimientos de la existencia de dichas técnicas.</li>
+          </ul>
+          </div>
+        </div>
+        <label class="inputSistema" for="rangosSistema"> <img src="../images/plantillas/rangos.webp" class="ImgSistema" alt=""></label>
+
+
+
+
+
+        <input class="hijosInputSistema inputIconGeneral" type="radio" id="hijosSistema" name="inputSistemas">
+        <div class="backgroundHijosSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type="radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextHijos"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide">Sistema de Hijos</span> En el mundo ninja también se puede encontrar el amor y reflejarlo con una semilla de vida, en este sistema se podrá ver cómo se podrá tener un hijo y cómo funciona el heredar habilidades. Aunque para lograr esto, se debe cumplir con algunos requisitos:
+            <ul>
+              <li>Su personaje debe tener una pareja/esposa/amigo con derechos. Estos personajes deben si o si ser de otros usuarios. No valen personajes creados por uno mismo. (Puede haber excepciones. Preguntar al staff.)</li>
+              <li>Ambas partes deben estar de acuerdo.</li>
+              <li>Solo se podrá tener máximo 3 hijos por pareja. (Nuevamente, pueden haber excepciones.)</li>
+            </ul>
+            <h3 class="tituloAdicional1">Ficha del Hijo</h3>
+            <p>Cuando el bebé nace se deberá hacer una ficha especial que se subirá al álbum de la aldea de donde vives o perteneces claramente en la primera línea debes especificar en alto “FICHA DE HIJO”. Esto será así hasta que el niño crezca y se pueda considerar un nuevo "PJ", "NPC" o “PC”. En ese momento es que se podrá modificar esa ficha o resubirla con la plantilla de fichas que todos usamos. Vale destacar que esta nueva ficha no interfiere si los padres tienen varios PJ pues fácilmente se convierte en NPC y ya.</p>
+            <p>Por lógica, el niño al nacer será un bebe. Por ende, podrás cuidarlo a tu gusto y demás, para que pueda crecer deberán pasar algunos saltos temporales desde su nacimiento para que pueda volverse un niño de 8 años o en su defecto, que haya un salto temporal y que dependiendo de cuantos años o meses sean, pues el niño crezca. Obviamente tampoco es que, al hacerse un salto de 3 meses, el niño tendrá 10 años, eviten sanciones.</p>
+            <h3 class="tituloAdicional1">Plantilla Ficha</h3>
+            <ul id="ejemploChakra1">
+              <li>Nombre:</li>
+              <li>Clan:</li>
+              <li>Aldea de Nacimiento:</li>
+              <li>Aldea de Residencia:</li>
+              <li>Padre:</li>
+              <li>Madre:</li>
+              <li>Hermanos/as: (Si es que tiene)</li>
+            </ul>
+
+            <p id="infoImportanteSistemas">Detalles muy importantes que debes tener en cuenta:</p>
+            <ul>
+              <li>Apellido: El apellido del hijo siempre será igual al del padre con mayor número de puntos de reputación al momento del nacimiento.</li>
+              <li>Residencia: La aldea de residencia del hijo debe ser la misma de los padres. En caso de vivir en aldeas separadas al momento del nacimiento, la aldea de residencia debe concordar con la del padre que le esté criando.</li>
+              <li><span id="infoImportanteSistemas">Herencias</span>
+              <ul>
+                <li>El hijo puede heredar un objeto que cualquiera de los dos padres posea. (Si se elige este beneficio, no se tendrá objeto libre).</li>
+                <li>El hijo puede heredar hasta 2 Jutsus que sus padres hayan aprendido (Máximo de rango B y Máximo 1 Jutsu por padre).</li>
+                <li>El hijo puede heredar uno de los elementos básicos que sus padres manejen a parte del elemento inicial. Este elemento heredado iniciara en 5%.</li>
+                <li>El hijo puede heredar uno de los estilos de pelea que sus padres manejen. Este iniciara en 5%. Aquellos estilos que requieran en conjunto un Kekkei Genkai para funcionar, por ejemplo, el sistema arena o la posesión de sombra reemplazan este punto, por ende, si tu clan posee algo así, no podrás heredarle un estilo. Claramente, al tener lo antes mencionado, debe seguir el mismo sistema de aprendizaje para poder manipular correctamente ese estilo.</li>
+                <li>Kekkei Genkai: Los hijos pueden heredar los Kekkei Genkai que tengan los padres. Sin embargo, el hijo solo podrá recibir un Kekkei Genkai por padre. Es decir, máximo dos, uno del padre y uno de la madre. El cómo se transferirán las sucesiones sanguíneas, dependerá del tipo de Kekkei Genkai.</li>
+                <li>Dōjutsus: Para las sucesiones sanguíneas oculares, solo podrán adoptar por uno, si ambos padres tienen Dōjutsus diferentes. Cabe aclarar que para un padre pueda aspirar a heredar su Dōjutsu a un hijo, el Dōjutsu en cuestión debe ser propio, si son ojos implantados, el beneficio no se puede transferir. (El Dōjutsu iniciara dormido). <br>
+                  <span id="ejemploChakra2">Ejemplo: El padre tiene Sharingan y la madre Byakugan. Se deberá elegir que Dōjutsu es el que se desea otorgar al hijo.</span>
+                </li>
+              </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <label class="inputSistema" for="hijosSistema"> <img src="../images/plantillas/heridas.webp" class="ImgSistema" alt=""></label>
+
+<!-- 
+        <input class="heridasInputSistema inputIconGeneral" type="radio" id="heridasSistema" name="inputSistemas">
+        <div class="backgroundHeridasSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type="radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextHeridas"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide">Sistema de Heridas</span>
+          </div>
+        </div>
+        <label class="inputSistema" for="heridasSistema"> <img src="../images/plantillas/heridas.webp" class="ImgSistema" alt=""></label>
+
+
+        <input class="heridasInputSistema inputIconGeneral" type="radio" id="heridasSistema" name="inputSistemas">
+        <div class="backgroundHeridasSistemaSlide backgroundSistemasGeneral">
+          <input class="resetExitInput" type="radio" id="resetExit" name="inputSistemas">
+          <label for="resetExit"> <img class="resetExitIcon"  src="../images/reject.png" alt=""></label>
+          <div class="sistemaTextDescripcion sisTextHeridas"><img src="../images/sistemas/prueba.webp" alt=""> <span id="tituloSistemaSlide">Sistema de Heridas</span>
+          </div>
+        </div>
+        <label class="inputSistema" for="heridasSistema"> <img src="../images/plantillas/heridas.webp" class="ImgSistema" alt=""></label> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </section>
 
 

@@ -25,7 +25,6 @@ body {
 
 /* * CONTENEDORES GENERALES */
 
-
 .portadaInicio {
   border-radius: 15px;
 }
@@ -65,91 +64,158 @@ body {
   position: fixed;
   left: 0px;
   top: 0px;
-  background: rgba(96, 28, 31, 0.85);
-  width: 164px;
+  background: rgba(9, 5, 6, 0.85);
+  width: 100px;
   height: 100%;
   transition: width 0.5s ease;
   z-index: 0;
 }
-.navegadorGeneral:hover {
-  background: rgba(60, 28, 31);
-  width: 371px;
+.navegadorGeneral:hover{
+  background: rgba(9, 5, 6, 0.85);
+  width: 150px;
+
 }
 .iconoNav{
   position: relative;
   height: 97px;
   width: 97px;
-  left: 33px;
   top: 18px;
+  left: 0px;
   border-radius: 0px;
   transition: all 0.5s;
 }
 .navegadorGeneral:hover .iconoNav{
     border-radius: 10px;
     transition: all 0.5s;
-    left: 137px;
+    left: 30px;
 }
-
-.navegadorGeneral:hover .labelIconExpandido {
+.tituloMenuGeneral{
+  white-space: nowrap;
+  position: relative;
+  top: -48px;
+  left: 0px;
+  font-family: Naruto;
+  color: #FFFFFF;
+  opacity: 0;
+}
+.navegadorGeneral:hover .tituloMenuGeneral{
   opacity: 1;
-  left: 122px;
+  transition: all 0.5s;
+  position: relative;
+  left: 150px;
+  top: -66px;
+  background: rgba(9, 5, 6, 0.85);
+  padding: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .hrNav{
+  opacity: 1;
   position: relative;
   color: white;
   width: 50%;
-  top: 40px;
+  top: 0px;
   left: 25%;
   align-items: center;
   border-width: 5px;
 }
 
-.linksNavegador{
+/* .linksNavegador{
   display: flex;
   flex-direction: column;
-  white-space: nowrap;
-  padding-top: 50%;
+} */
+
+.navegadorGeneral:hover~.imgNavIcon{
+  display: flex;
+
 }
 .linksNavegador li a{
+  display: flex;
+  margin-top: 60px;
   font-family: Cabin;
   text-decoration: none;
   color: white;
   font-weight: 700;
   font-size: 29px;
-  display: none;
   transition: all 0.5s;
 }
-
 .linksNavegador li{
   list-style: none;
   display: flex;
-  margin: 25px;
-}
-.linksNavegador li img{
-  height: 60px;
-  width: 60px;
-}
-.navegadorGeneral:hover .linksNavegador li a{
-  display: flex;
-  margin-left: 30px;
-  align-items: center;
-  transition: all 0.5s;
-  background-color: rgba(32, 14, 17);
-  width: 0px;
 }
 
-#hoverIconNav:hover{
-  transition: width 0.5s;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  padding-right: auto;
-  background-color: rgb(155, 78, 91);
-  width: 225px;
+.imgNavIcon{
   height: 60px;
-  border-radius: 5px;
+  width: 60px;
+
 }
+.textLinkNav{
+  opacity: 0;
+  position: relative;
+  /* left: -90px; */
+}
+
+.imgNavIcon:hover ~ .textLinkNav{
+  opacity: 1;
+  transition: all 0.5s;
+  padding-left: 70px;
+  padding-right:70px;
+  padding-top: 10px;
+  background: rgba(9, 5, 6, 0.85);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  left: 58px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .carousel{
@@ -637,7 +703,7 @@ footer{
   top: -40px;
   display: block;
   font-family: Naruto;
-  font-size: 24px;
+  font-size: 20px;
   width: 100%;
   color: #FFFFFF;
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
@@ -646,7 +712,7 @@ footer{
 .sistemaTextDescripcion{ /* ? ESTO CONTROLA TODOS LOS TEXTOS DESCRIPTIVOS DE LOS SISTEMAS*/
   display: block;
   font-family: Cabin;
-  text-align: justify;
+  text-align:justify;
   color: white;
   padding-top: 20px;
   padding-left: 5px;
@@ -910,6 +976,94 @@ footer{
   animation: slide 0.5s forwards;
 }
 
+/* ATAQUES COMBINADOS SISTEMA */
+
+.ataquesCombinadosInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+  position: relative;
+  max-width: 214px;
+  max-height: 214px;
+  left: 112px;
+  top: 339px;
+  border-radius: 10px;
+}
+.backgroundataquesCombinadosSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  opacity: 0;
+  position: fixed;
+  width: 390px;
+  height: 815px;
+  left: 2000px;
+  top: 80px;
+  background:rgba(30, 16, 20, 0.5);
+  border-radius: 15px;
+  z-index: 3;
+}
+@keyframes slide {
+  100% {left: 1509px;}
+}
+.ataquesCombinadosInputSistema:checked ~ .backgroundataquesCombinadosSistemaSlide{ /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards;
+}
+
+/* RANGOS SISTEMA */
+
+.rangosInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+  position: relative;
+  max-width: 214px;
+  max-height: 214px;
+  left: 112px;
+  top: 339px;
+  border-radius: 10px;
+}
+.backgroundRangosSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  opacity: 0;
+  position: fixed;
+  width: 390px;
+  height: 815px;
+  left: 2000px;
+  top: 80px;
+  background:rgba(30, 16, 20, 0.5);
+  border-radius: 15px;
+  z-index: 3;
+}
+@keyframes slide {
+  100% {left: 1509px;}
+}
+.rangosInputSistema:checked ~ .backgroundRangosSistemaSlide{ /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards;
+}
+
+/* HIJOS SISTEMA */
+
+.hijosInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+  position: relative;
+  max-width: 214px;
+  max-height: 214px;
+  left: 112px;
+  top: 339px;
+  border-radius: 10px;
+}
+.backgroundHijosSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  opacity: 0;
+  position: fixed;
+  width: 390px;
+  height: 815px;
+  left: 2000px;
+  top: 80px;
+  background:rgba(30, 16, 20, 0.5);
+  border-radius: 15px;
+  z-index: 3;
+}
+@keyframes slide {
+  100% {left: 1509px;}
+}
+.hijosInputSistema:checked ~ .backgroundHijosSistemaSlide{ /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards;
+}
+
+
 
 
 
@@ -917,7 +1071,21 @@ footer{
 
 
 .hrSistemas{
+  color:#dfdfdf;
+  border: 1px #FFFFFF solid;
+  position: relative;
+  left: 13%;
   width: 75%;
+  z-index: 2;
+  opacity: 1;
+}
+.tituloAdicional1{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Naruto;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 #ejemploChakra1{
@@ -941,7 +1109,7 @@ footer{
 }
 #infoImportanteBoldSistemas{ /* ! ESTO CONTROLA LOS TEXTOS TITULO BOLD*/
   font-weight: bold;
-  color: aqua;
+  color: rgb(9, 12, 8);
 }
 #infoImportanteAvisos{
   font-weight: bold;
@@ -1051,6 +1219,209 @@ footer{
 
 
 
+/* ! TIENDA HTML */
+
+.rectangleObjetsGeneral{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.tituloTiendaPrincipal{
+  padding-top: 20px;
+}
+.descripcionTiendaPrincipal{
+  padding-top: 40px;
+}
+.tituloTienda{
+  padding-top: 10px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: Naruto;
+  background-color: rgba(32, 14, 17, 0.70);
+  border-radius: 10px;
+  width: 100%;
+}
+.portadaTienda{
+  border-radius: 10px;
+}
+.inputRadioTienda{
+  display: none;
+}
+.labelRadioTienda{
+  min-width: 150px;
+  max-width: 150px;
+  text-align: center;
+  padding: 8px;
+  color: rgb(199, 209, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(199, 209, 0);
+}
+.labelRadioTienda:hover{
+  color: black;
+  background-color: rgb(199, 209, 0);
+  transition: all 0.5s;
+}
+
+.sectionArmasLanzables{
+  display: flex;
+  flex-direction: row;
+}
+
+.fondoCard{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(96, 28, 31, 0.40);
+  max-width: 380px;
+  max-height: 440px;
+}
+.tituloCard{
+  margin-top: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: Naruto;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.cardBody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fondoCard img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+.descripcionCard{
+  color: #FFFFFF;
+  text-align: justify;
+  font: Cabin;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 80px;
+  
+}
+
+.descripcionDetallesObjeto{
+  width: 100%;
+  text-align: center;
+  display: block;
+  color: yellow;
+  border: 2px dashed #000000;
+  background: rgba(155,111,0,0.35);
+}
+
+
+/*  */
+/*  */
+
+.descripcionCard::-webkit-scrollbar {
+  border-radius: 10px;
+  background-color: #dfdfdf;
+  width: 5px;
+  height: 5px;
+}
+.descripcionCard::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+.sectionGeneralTienda{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+.sectionArmasLanzables{
+  display: none;
+}
+.inputArmasLanzables:checked ~ .sectionArmasLanzables{
+  display: flex;
+}
+
+
+
+.sectionEspadas{
+  display: none;
+}
+.inputEspadas:checked ~ .sectionEspadas{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1126,6 +1497,10 @@ footer{
     justify-content:center;
     min-height: 576px;
   }
+  .linksNavegador{
+    display: flex;
+    flex-direction: column;
+  }
 
   .hrNav{
     display:none;
@@ -1141,24 +1516,22 @@ footer{
     left: 0px;
   }
   .navegadorGeneral:hover{
-    width: 371px;
+    width: 150px;
     height: 100%;
   }
   .navegadorGeneral:hover .hrNav{
     display: flex;
   }
-  .linksNavegador{
-    display: none;
-  }
+
   .navegadorGeneral:hover .linksNavegador{
     display: flex;
     transition: all 0.5s;
   }
-  .linksNavegador li img{
+  .linksNavegador li{
     display: none;
     transition: all 0.5s;
   }
-  .navegadorGeneral:hover .linksNavegador li img{
+  .navegadorGeneral:hover .linksNavegador li{
     display: flex;
     transition: all 0.5s;
   }
@@ -1190,7 +1563,10 @@ footer{
   .rectangleObjetsGeneral a img{
     width: 428px;
   }
-
+  .linksNavegador li a{
+    display: flex;
+    margin-top: 30px;
+  }
   /* Sistemas */
   .iconosSistemasGeneral{ /* ESTO CONTROLA LOS ICONOS DEL GRID PARA LUEGO VOLVERLOS SELECTORES */
     display: grid;
