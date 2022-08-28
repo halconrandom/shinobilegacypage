@@ -1,0 +1,197 @@
+// ! MEDIA DE 735 DE ANCHO MAXIMO
+@media (max-height: 735px) {
+    .linksNavegador {
+      padding-top: 40px;
+    }
+  }
+  
+  // ! MEDIA DE 1550 DE ANCHO MINIMO
+  @media (min-width: 1550px) {
+    /* ? TAMAÑO PC*/
+  
+    .portadaInicio, .rectangleInicio, .rectangleObjetsGeneral {
+      position: relative;
+      left: 616px;
+    }
+  }
+  
+  // ! MEDIA DE 1280 DE ANCHO MINIMO Y 1549 DE ANCHO MAXIMO
+  @media (min-width: 1280px) and (max-width: 1549px) {
+    /* ? TAMAÑO LAPTOP*/
+  
+    .portadaInicio, .rectangleInicio, .rectangleObjetsGeneral {
+      position: relative;
+      left: 351px;
+    }
+  
+    .backgroundSistemasGeneral {
+      background: rgb(30, 16, 20);
+    }
+  
+    @keyframes slide {
+      100% {
+        left: 860px;
+      }
+    }
+  }
+  
+  // ! MEDIA DE 1280 ANCHO MINIMO
+  @media (min-width: 1280px) {
+    /* ? TAMAÑO PC -> lAPTOP*/
+  
+    .navBarCellphone {
+      display: none;
+    }
+  
+    footer {
+      margin-left: 164px;
+    }
+  }
+  
+  // ! MEDIA DE 1279 DE ANCHO MAXIMO
+  @media (max-width: 1279px) {
+    .rectangleInicio {
+      /* top: -30px; */
+      display: flex;
+      justify-content: center;
+      min-height: 576px;
+    }
+  
+    .linksNavegador {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .hrNav {
+      display: none;
+    }
+  
+    .navegadorGeneral {
+      width: 97px;
+      height: 97px;
+      border-radius: 10px;
+      z-index: 2;
+    }
+  
+    .iconoNav {
+      top: 0px;
+      left: 0px;
+    }
+  
+    .navegadorGeneral:hover {
+      width: 150px;
+      height: 100%;
+  
+      .hrNav {
+        display: flex;
+      }
+  
+      .linksNavegador {
+        display: flex;
+        transition: all 0.5s;
+      }
+    }
+  
+    .linksNavegador li {
+      display: none;
+      transition: all 0.5s;
+    }
+  
+    .navegadorGeneral:hover .linksNavegador li {
+      display: flex;
+      transition: all 0.5s;
+    }
+  
+    .squareDescripcion {
+      margin-left: 0px;
+    }
+  
+    .carousel {
+      position: relative;
+      left: auto;
+      top: 299px;
+      z-index: 1;
+    }
+  
+    .backgroundSistemasGeneral {
+      background: rgb(30, 16, 20);
+    }
+  }
+  
+  // ! MEDIA DE 768 ANCHO MAXIMO
+  @media (max-width: 768px) {
+    @keyframes slide {
+      100% {
+        left: 369px;
+      }
+    }
+  
+    // ! MEDIA DE 485 ANCHO MAXIMO
+    @media (max-width: 485px) {
+      .rectangleInicio {
+        /* top: -30px; */
+        display: flex;
+        justify-content: center;
+        min-height: 551px;
+      }
+  
+      .rectangleObjetsGeneral a img {
+        width: 428px;
+      }
+  
+      .linksNavegador li a {
+        display: flex;
+        margin-top: 30px;
+      }
+  
+      /* Sistemas */
+  
+      .iconosSistemasGeneral {
+        /* ESTO CONTROLA LOS ICONOS DEL GRID PARA LUEGO VOLVERLOS SELECTORES */
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 53% 53%;
+        grid-template-rows: 191px 191px 191px 191px 191px;
+      }
+  
+      .ImgSistema {
+        max-width: 180px;
+        max-height: 180px;
+      }
+  
+      @keyframes slide {
+        100% {
+          left: 19px;
+        }
+      }
+  
+      /* FICHAS */
+  
+      .fondoFicha {
+        margin-top: 220px;
+        transform: rotate(90deg);
+      }
+  
+      .fondoFotoPerfil {
+        transform: rotate(90deg);
+      }
+    }
+  
+    // ! MEDIA DE 768 DE ANCHO EXACTOS
+    @media (width: 768px) {
+      /* SISTEMAS */
+  
+      .iconosSistemasGeneral {
+        /* ESTO CONTROLA LOS ICONOS DEL GRID PARA LUEGO VOLVERLOS SELECTORES */
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 26% 26% 26% 26%;
+        grid-template-rows: 191px 191px 191px 191px 191px;
+      }
+  
+      .ImgSistema {
+        max-width: 180px;
+        max-height: 180px;
+      }
+    }
+  }

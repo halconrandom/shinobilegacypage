@@ -1,33 +1,27 @@
-/* ************FUENTES**************** */
+@charset "UTF-8";
 @font-face {
   font-family: Cabin;
-  src: url(./fonts/Cabin-Regular.ttf);
-}
+  src: url(./fonts/Cabin-Regular.ttf); }
+
 @font-face {
   font-family: Naruto;
-  src: url(./fonts/NinjaNaruto-YOn4.ttf);
-}
+  src: url(./fonts/NinjaNaruto-YOn4.ttf); }
 
 /* ! CODIGO */
 * {
   margin: 0%;
-  padding: 0%;
-  
-}
+  padding: 0%; }
 
 body {
   background-image: url("./images/Fondobackground.png");
   background-position: top;
   background-repeat: repeat;
   background-size: auto;
-  padding-top: 25px;
-}
+  padding-top: 25px; }
 
 /* * CONTENEDORES GENERALES */
-
 .portadaInicio {
-  border-radius: 15px;
-}
+  border-radius: 15px; }
 
 .rectangleInicio {
   /* ? ESTO CONTROLA EL FONDO DEL CONTENIDO*/
@@ -37,11 +31,9 @@ body {
   top: -10px;
   max-width: 889px;
   height: 300px;
-  background: rgba(9, 5, 6, 0.85);
-  /* z-index: -1; */
-}
+  background: rgba(9, 5, 6, 0.85); }
 
-.rectangleObjetsGeneral{
+.rectangleObjetsGeneral {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,9 +45,7 @@ body {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   z-index: 1;
-  padding-bottom: 20px;
-}
-
+  padding-bottom: 20px; }
 
 .navegadorGeneral {
   display: flex;
@@ -68,37 +58,35 @@ body {
   width: 100px;
   height: 100%;
   transition: width 0.5s ease;
-  z-index: 0;
-}
-.navegadorGeneral:hover{
-  background: rgba(9, 5, 6, 0.85);
-  width: 150px;
+  z-index: 0; }
+  .navegadorGeneral:hover {
+    background: rgba(9, 5, 6, 0.85);
+    width: 150px; }
 
-}
-.iconoNav{
+.iconoNav {
   position: relative;
   height: 97px;
   width: 97px;
   top: 18px;
   left: 0px;
   border-radius: 0px;
+  transition: all 0.5s; }
+
+.navegadorGeneral:hover .iconoNav {
+  border-radius: 10px;
   transition: all 0.5s;
-}
-.navegadorGeneral:hover .iconoNav{
-    border-radius: 10px;
-    transition: all 0.5s;
-    left: 30px;
-}
-.tituloMenuGeneral{
+  left: 30px; }
+
+.tituloMenuGeneral {
   white-space: nowrap;
   position: relative;
   top: -48px;
   left: 0px;
   font-family: Naruto;
   color: #FFFFFF;
-  opacity: 0;
-}
-.navegadorGeneral:hover .tituloMenuGeneral{
+  opacity: 0; }
+
+.navegadorGeneral:hover .tituloMenuGeneral {
   opacity: 1;
   transition: all 0.5s;
   position: relative;
@@ -107,10 +95,9 @@ body {
   background: rgba(9, 5, 6, 0.85);
   padding: 20px;
   border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
+  border-bottom-right-radius: 10px; }
 
-.hrNav{
+.hrNav {
   opacity: 1;
   position: relative;
   color: white;
@@ -118,132 +105,71 @@ body {
   top: 0px;
   left: 25%;
   align-items: center;
-  border-width: 5px;
-}
+  border-width: 5px; }
 
 /* .linksNavegador{
-  display: flex;
-  flex-direction: column;
-} */
+    display: flex;
+    flex-direction: column;
+  } */
+.navegadorGeneral:hover ~ .imgNavIcon {
+  display: flex; }
 
-.navegadorGeneral:hover~.imgNavIcon{
-  display: flex;
-
-}
-.linksNavegador li a{
-  display: flex;
-  margin-top: 60px;
-  font-family: Cabin;
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-  font-size: 29px;
-  transition: all 0.5s;
-}
-.linksNavegador li{
+.linksNavegador li {
   list-style: none;
-  display: flex;
-}
+  display: flex; }
+  .linksNavegador li a {
+    display: flex;
+    margin-top: 60px;
+    font-family: Cabin;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 29px;
+    transition: all 0.5s; }
 
-.imgNavIcon{
+.imgNavIcon {
   height: 60px;
-  width: 60px;
+  width: 60px; }
 
-}
-.textLinkNav{
+.textLinkNav {
   opacity: 0;
   position: relative;
-  /* left: -90px; */
-}
+  /* left: -90px; */ }
 
-.imgNavIcon:hover ~ .textLinkNav{
+.imgNavIcon:hover ~ .textLinkNav {
   opacity: 1;
   transition: all 0.5s;
   padding-left: 70px;
-  padding-right:70px;
+  padding-right: 70px;
   padding-top: 10px;
   background: rgba(9, 5, 6, 0.85);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   position: relative;
-  left: 58px;
-}
+  left: 58px; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.carousel{
+.carousel {
   position: relative;
   top: 22px;
   left: 388px;
   width: 485px;
   height: 267px;
-  z-index: 1;
-}
+  z-index: 1; }
 
-#tituloCaruselText{
+#tituloCaruselText {
   font-family: Cabin;
   font-size: 20px;
-  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-}
-#descripcionCaruselText{
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+#descripcionCaruselText {
   font-family: Cabin;
   font-size: 12px;
-  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-}
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
 
+.carousel-item img {
+  border-radius: 10%; }
 
-.carousel-item img{
-  border-radius: 10%;
-}
-
-.squareDescripcion{
+.squareDescripcion {
   position: absolute;
   margin-top: 22px;
   margin-left: 20px;
@@ -252,9 +178,9 @@ body {
   max-width: 342px;
   max-height: 267px;
   background: #200E11;
-  border-radius: 30px;
-}
-.tituloPaginaGeneral{
+  border-radius: 30px; }
+
+.tituloPaginaGeneral {
   font-family: 'Cabin';
   font-style: normal;
   font-weight: 700;
@@ -262,9 +188,9 @@ body {
   line-height: 24px;
   color: #FFFFFF;
   text-align: center;
-  padding-top: 3px;
-}
-.descripcionPaginaGeneral{
+  padding-top: 3px; }
+
+.descripcionPaginaGeneral {
   font-family: Cabin;
   text-align: justify;
   font-family: 'Cabin';
@@ -274,13 +200,9 @@ body {
   line-height: 15px;
   color: #FFFFFF;
   padding-left: 10px;
-  padding-right: 10px;
-}
+  padding-right: 10px; }
 
-
-
-
-footer{
+footer {
   display: flex;
   justify-content: space-around;
   justify-content: center;
@@ -288,57 +210,16 @@ footer{
   text-align: center;
   color: white;
   font-size: 12px;
-  background-color: rgb(9, 5, 6, 0.85);
-  z-index: -1;
-}
+  background-color: rgba(9, 5, 6, 0.85);
+  z-index: -1; }
 
+.scrollLinkInicio {
+  max-width: 100%; }
 
+.tituloPaginaFichas, .descripcionPaginaFichas {
+  padding-top: 20px; }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*! INDEX CODE */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-
-
-.scrollLinkInicio{
- max-width: 100%;   
-}
-
-
-
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*! FICHAS CODE */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-.tituloPaginaFichas{
-  padding-top: 20px;
-}
-.descripcionPaginaFichas{
-  padding-top: 20px;
-}
-
-.botonPJ{
+.botonPJ {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,9 +229,9 @@ footer{
   width: 88px;
   height: 34px;
   background: #4F1A1E;
-  border-radius: 10px;
-}
-.botonNPC{
+  border-radius: 10px; }
+
+.botonNPC {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -360,9 +241,9 @@ footer{
   width: 88px;
   height: 34px;
   background: #4F1A1E;
-  border-radius: 10px;
-}
-.botonPC{
+  border-radius: 10px; }
+
+.botonPC {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -372,37 +253,18 @@ footer{
   width: 88px;
   height: 34px;
   background: #4F1A1E;
-  border-radius: 10px;
-}
-#botontextPJ{
-  text-decoration: none;
-  color: #FFFFFF;
-  font-family: 'Cabin';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-}
-#botontextNPC{
-  text-decoration: none;
-  color: #FFFFFF;
-  font-family: 'Cabin';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-}
-#botontextPC{
-  text-decoration: none;
-  color: #FFFFFF;
-  font-family: 'Cabin';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-}
+  border-radius: 10px; }
 
-.descripcionPaginaFichas2{
+#botontextPJ, #botontextNPC, #botontextPC {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px; }
+
+.descripcionPaginaFichas2 {
   font-family: Cabin;
   text-align: justify;
   font-family: 'Cabin';
@@ -413,24 +275,21 @@ footer{
   text-align: center;
   color: #FFFFFF;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 10px; }
 
-}
+.fichaPrimerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-.fichaPrimerSection{
- display: flex;
- flex-direction: column;
- align-items: center;
-}
-
-.pestañaDatosFicha{
+.pestañaDatosFicha {
   position: relative;
   width: 700px;
   height: 1120px;
   background: rgba(127, 124, 124, 0.5);
-  border-radius: 20px;
-}
-#fotoPersonajeFicha{
+  border-radius: 20px; }
+
+#fotoPersonajeFicha {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -439,9 +298,9 @@ footer{
   height: 550px;
   left: 75px;
   top: 17px;
-  background: #D9D9D9;
-}
-#opcionesFicha{
+  background: #D9D9D9; }
+
+#opcionesFicha {
   position: relative;
   width: 114px;
   height: 22px;
@@ -454,25 +313,25 @@ footer{
   line-height: 22px;
   display: grid;
   grid-template-columns: 50% 50%;
-  text-align: center;
-}
-#editarFichaOption{
+  text-align: center; }
+
+#editarFichaOption {
   position: absolute;
   text-decoration: none;
-  color: #090506;
-}
-#borrarFichaOption{
+  color: #090506; }
+
+#borrarFichaOption {
   position: absolute;
   left: 200px;
   width: 124px;
   height: 22px;
-  text-decoration: none;    
-  color: #090506;
-}
-#opcionesFicha a:hover{
-  color: white;
-}
-.nombrePersonajeFicha{
+  text-decoration: none;
+  color: #090506; }
+
+#opcionesFicha a:hover {
+  color: white; }
+
+.nombrePersonajeFicha {
   position: absolute;
   width: 700px;
   height: 57px;
@@ -481,12 +340,12 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FFFFFF;
-}
+  color: #FFFFFF; }
+
 /*  */
 /* DATOS BASICOS FICHA */
 /*  */
-.labelDatosBasicosFicha{
+.labelDatosBasicosFicha {
   position: absolute;
   width: 161px;
   height: 45px;
@@ -501,15 +360,15 @@ footer{
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 17px;
-}
-.datosbasicosInfoFicha{
+  line-height: 17px; }
+
+.datosbasicosInfoFicha {
   display: grid;
   grid-template-columns: 50% 50%;
   width: 312px;
-  height: 39px;
-}
-.labelbackgroundInfo{
+  height: 39px; }
+
+.labelbackgroundInfo {
   background: #090506;
   border-radius: 10px;
   padding-left: 20px;
@@ -522,144 +381,113 @@ footer{
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content:left;
-}
-.edadInfoFicha{
+  justify-content: left; }
+
+.edadInfoFicha {
   position: absolute;
   width: 312px;
   height: 39px;
   left: 38px;
-  top: 759px;
-}
-.clanInfoFicha{
+  top: 759px; }
+
+.clanInfoFicha {
   position: absolute;
   width: 312px;
   height: 39px;
   left: 350px;
-  top: 759px;
-}
-.alturaInfoFicha{
+  top: 759px; }
+
+.alturaInfoFicha {
   position: absolute;
   width: 312px;
   height: 39px;
   left: 38px;
-  top: 803px;    
-}
-.pesoInfoFicha{
+  top: 803px; }
+
+.pesoInfoFicha {
   position: absolute;
   width: 312px;
   height: 39px;
   left: 350px;
-  top: 803px; 
-}
-.anaciInfoFicha{
+  top: 803px; }
+
+.anaciInfoFicha {
   position: absolute;
   width: 312px;
   height: 39px;
   left: 38px;
-  top: 847px;
-}
-.aresiInfoFicha{
+  top: 847px; }
+
+.aresiInfoFicha {
   position: absolute;
   width: 312px;
   height: 39px;
   left: 350px;
-  top: 847px;
-}
-.bandoInfoFicha{
+  top: 847px; }
+
+.bandoInfoFicha {
   position: absolute;
   width: 312px;
   height: 39px;
   left: 38px;
-  top: 891px;
-}
-.profesionInfoFicha{
+  top: 891px; }
+
+.profesionInfoFicha {
   position: absolute;
   width: 312px;
   height: 39px;
   left: 350px;
-  top: 891px;
-}
-.sangreInfoFicha{
+  top: 891px; }
+
+.sangreInfoFicha {
   position: absolute;
   width: 312px;
   height: 39px;
   left: 38px;
-  top: 935px;
-}
-.mascotaInfoFicha{
+  top: 935px; }
+
+.mascotaInfoFicha {
   position: absolute;
   width: 312px;
   height: 39px;
   left: 350px;
-  top: 935px;
-}
-.apodoInfoFicha{
+  top: 935px; }
+
+.apodoInfoFicha {
   position: absolute;
   width: 623px;
   height: 89px;
   left: 38px;
-  top: 979px;    
-}
+  top: 979px; }
 
+.tituloPaginaSistemas {
+  padding-top: 20px; }
 
+.descripcionPaginaSistemas {
+  padding-top: 30px; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*! SISTEMAS CODE */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-.tituloPaginaSistemas{
-  padding-top: 20px;
-}
-.descripcionPaginaSistemas{
-  padding-top: 30px;
-}
-
-.iconosSistemasGeneral{ /* ESTO CONTROLA LOS ICONOS DEL GRID PARA LUEGO VOLVERLOS SELECTORES */
+.iconosSistemasGeneral {
+  /* ESTO CONTROLA LOS ICONOS DEL GRID PARA LUEGO VOLVERLOS SELECTORES */
   display: grid;
   margin-top: 10px;
   margin-left: 5px;
   grid-template-columns: 220px 220px 220px 220px;
-  grid-template-rows: 225px 225px 225px 225px 225px;
+  grid-template-rows: 225px 225px 225px 225px 225px; }
 
-}
-.inputIconGeneral{ /* ? Esto es para ocultar los radios*/
-  display: none;
-}
-.ImgSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+.inputIconGeneral {
+  /* ? Esto es para ocultar los radios*/
+  display: none; }
+
+.ImgSistema {
+  /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
   max-width: 214px;
   max-height: 214px;
-  border-radius: 10px;
-}
-.resetExitInput{
-  display: none;
-}
-.resetExitIcon{
+  border-radius: 10px; }
+
+.resetExitInput {
+  display: none; }
+
+.resetExitIcon {
   position: relative;
   left: 340px;
   cursor: pointer;
@@ -668,541 +496,514 @@ footer{
   margin-left: 10px;
   display: block;
   height: 20px;
-  width: 20px;
-}
-.resetExitIcon:hover{
-  background-color: #FFFFFF;
-}
-  /*  */
-  /* ! ESTADISTTICAS */
-  /*  */
+  width: 20px; }
+  .resetExitIcon:hover {
+    background-color: #FFFFFF; }
 
-.backgroundEstadisticaSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+/*  */
+/* ! ESTADISTTICAS */
+/*  */
+.backgroundEstadisticaSistemaSlide {
+  /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
   opacity: 0;
   position: fixed;
   width: 390px;
   height: 815px;
   left: 2000px;
   top: 80px;
-  background:rgba(30, 16, 20, 0.5);
+  background: rgba(30, 16, 20, 0.5);
   border-radius: 15px;
-  z-index: 3;
-}
+  z-index: 3; }
+
 @keyframes slide {
-  100% {left: 1509px;}
-}
-.estadisticaInputSistema:checked ~ .backgroundEstadisticaSistemaSlide{ /* esto controla la animacion */
+  100% {
+    left: 1509px; } }
+
+.estadisticaInputSistema:checked ~ .backgroundEstadisticaSistemaSlide {
+  /* esto controla la animacion */
   opacity: 1;
-  animation: slide 0.5s forwards;
-}
+  animation: slide 0.5s forwards; }
 
-.sistemaTextDescripcion #tituloSistemaSlide{ /* ! ESTO CONTROLA TODOS LOS TITULOS */
-  position: relative;
-  align-items: center;
-  text-align: center;
-  top: -40px;
-  display: block;
-  font-family: Naruto;
-  font-size: 20px;
-  width: 100%;
-  color: #FFFFFF;
-  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-}
-
-.sistemaTextDescripcion{ /* ? ESTO CONTROLA TODOS LOS TEXTOS DESCRIPTIVOS DE LOS SISTEMAS*/
+.sistemaTextDescripcion {
+  /* ? ESTO CONTROLA TODOS LOS TEXTOS DESCRIPTIVOS DE LOS SISTEMAS*/
   display: block;
   font-family: Cabin;
-  text-align:justify;
+  text-align: justify;
   color: white;
   padding-top: 20px;
   padding-left: 5px;
   padding-right: 5px;
   width: 380px;
   height: 760px;
-  overflow-y: scroll;
-}
-.sistemaTextDescripcion img{
-  border-radius: 10px;
-}
+  overflow-y: scroll; }
+  .sistemaTextDescripcion #tituloSistemaSlide {
+    /* ! ESTO CONTROLA TODOS LOS TITULOS */
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top: -40px;
+    display: block;
+    font-family: Naruto;
+    font-size: 20px;
+    width: 100%;
+    color: #FFFFFF;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+  .sistemaTextDescripcion img {
+    border-radius: 10px; }
+  .sistemaTextDescripcion::-webkit-scrollbar {
+    width: 8px;
+    height: 8px; }
+  .sistemaTextDescripcion:-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px; }
+  .sistemaTextDescripcion:-webkit-scrollbar-thumb {
+    background-color: #dfdfdf;
+    border-radius: 10px; }
+
 /* ! */
 /* ! ENTRE LOS COMENTARIOS ROJOS ES PARA EL SIDEBAR DE LA BARRA LATERAL */
-.sistemaTextDescripcion::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-.sistemaTextDescripcion:-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-}
-.sistemaTextDescripcion:-webkit-scrollbar-thumb {
-  background-color: #dfdfdf;
-  border-radius: 10px;
-}
-
 /* ! */
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */
-
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /* RESPETO SISTEMA */
-
-.RespetoInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+.RespetoInputSistema {
+  /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
   position: relative;
   max-width: 214px;
   max-height: 214px;
   left: 112px;
   top: 339px;
-  border-radius: 10px;
-}
-.backgroundRespetoSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  border-radius: 10px; }
+
+.backgroundRespetoSistemaSlide {
+  /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
   opacity: 0;
   position: fixed;
   width: 390px;
   height: 815px;
   left: 2000px;
   top: 80px;
-  background:rgba(30, 16, 20, 0.5);
+  background: rgba(30, 16, 20, 0.5);
   border-radius: 15px;
-  z-index: 3;
-}
+  z-index: 3; }
+
 @keyframes slide {
-  100% {left: 1509px;}
-}
-.RespetoInputSistema:checked ~ .backgroundRespetoSistemaSlide{ /* esto controla la animacion */
+  100% {
+    left: 1509px; } }
+
+.RespetoInputSistema:checked ~ .backgroundRespetoSistemaSlide {
+  /* esto controla la animacion */
   opacity: 1;
-  animation: slide 0.5s forwards;
-}
+  animation: slide 0.5s forwards; }
 
 /* CHAKRA SISTEMA */
-
-.ChakraInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+.ChakraInputSistema {
+  /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
   position: relative;
   max-width: 214px;
   max-height: 214px;
   left: 112px;
   top: 339px;
-  border-radius: 10px;
-}
-.backgroundChakraSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  border-radius: 10px; }
+
+.backgroundChakraSistemaSlide {
+  /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
   opacity: 0;
   position: fixed;
   width: 390px;
   height: 815px;
   left: 2000px;
   top: 80px;
-  background:rgba(30, 16, 20, 0.5);
+  background: rgba(30, 16, 20, 0.5);
   border-radius: 15px;
-  z-index: 3;
-}
+  z-index: 3; }
+
 @keyframes slide {
-  100% {left: 1509px;}
-}
-.ChakraInputSistema:checked ~ .backgroundChakraSistemaSlide{ /* esto controla la animacion */
+  100% {
+    left: 1509px; } }
+
+.ChakraInputSistema:checked ~ .backgroundChakraSistemaSlide {
+  /* esto controla la animacion */
   opacity: 1;
-  animation: slide 0.5s forwards;
-}
+  animation: slide 0.5s forwards; }
 
 /* SENJUTSU SISTEMA */
-
-.senjutsuInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+.senjutsuInputSistema {
+  /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
   position: relative;
   max-width: 214px;
   max-height: 214px;
   left: 112px;
   top: 339px;
-  border-radius: 10px;
-}
-.backgroundSenjutsuSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  border-radius: 10px; }
+
+.backgroundSenjutsuSistemaSlide {
+  /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
   opacity: 0;
   position: fixed;
   width: 390px;
   height: 815px;
   left: 2000px;
   top: 80px;
-  background:rgba(30, 16, 20, 0.5);
+  background: rgba(30, 16, 20, 0.5);
   border-radius: 15px;
-  z-index: 3;
-}
+  z-index: 3; }
+
 @keyframes slide {
-  100% {left: 1509px;}
-}
-.senjutsuInputSistema:checked ~ .backgroundSenjutsuSistemaSlide{ /* esto controla la animacion */
+  100% {
+    left: 1509px; } }
+
+.senjutsuInputSistema:checked ~ .backgroundSenjutsuSistemaSlide {
+  /* esto controla la animacion */
   opacity: 1;
-  animation: slide 0.5s forwards;
-}
+  animation: slide 0.5s forwards; }
 
 /* REFLEJOS SISTEMA */
-
-.reflejosInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+.reflejosInputSistema {
+  /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
   position: relative;
   max-width: 214px;
   max-height: 214px;
   left: 112px;
   top: 339px;
-  border-radius: 10px;
-}
-.backgroundreflejosSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  border-radius: 10px; }
+
+.backgroundreflejosSistemaSlide {
+  /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
   opacity: 0;
   position: fixed;
   width: 390px;
   height: 815px;
   left: 2000px;
   top: 80px;
-  background:rgba(30, 16, 20, 0.5);
+  background: rgba(30, 16, 20, 0.5);
   border-radius: 15px;
-  z-index: 3;
-}
+  z-index: 3; }
+
 @keyframes slide {
-  100% {left: 1509px;}
-}
-.reflejosInputSistema:checked ~ .backgroundreflejosSistemaSlide{ /* esto controla la animacion */
+  100% {
+    left: 1509px; } }
+
+.reflejosInputSistema:checked ~ .backgroundreflejosSistemaSlide {
+  /* esto controla la animacion */
   opacity: 1;
-  animation: slide 0.5s forwards;
-}
+  animation: slide 0.5s forwards; }
 
 /* BUFFS SISTEMA */
-
-.buffsInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+.buffsInputSistema {
+  /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
   position: relative;
   max-width: 214px;
   max-height: 214px;
   left: 112px;
   top: 339px;
-  border-radius: 10px;
-}
-.backgroundBuffsSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  border-radius: 10px; }
+
+.backgroundBuffsSistemaSlide {
+  /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
   opacity: 0;
   position: fixed;
   width: 390px;
   height: 815px;
   left: 2000px;
   top: 80px;
-  background:rgba(30, 16, 20, 0.5);
+  background: rgba(30, 16, 20, 0.5);
   border-radius: 15px;
-  z-index: 3;
-}
-@keyframes slide {
-  100% {left: 1509px;}
-}
-.buffsInputSistema:checked ~ .backgroundBuffsSistemaSlide{ /* esto controla la animacion */
-  opacity: 1;
-  animation: slide 0.5s forwards;
-}
+  z-index: 3; }
 
+@keyframes slide {
+  100% {
+    left: 1509px; } }
+
+.buffsInputSistema:checked ~ .backgroundBuffsSistemaSlide {
+  /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards; }
 
 /* DAÑO SISTEMA */
-
-.dañoInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+.dañoInputSistema {
+  /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
   position: relative;
   max-width: 214px;
   max-height: 214px;
   left: 112px;
   top: 339px;
-  border-radius: 10px;
-}
-.backgroundDañoSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  border-radius: 10px; }
+
+.backgroundDañoSistemaSlide {
+  /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
   opacity: 0;
   position: fixed;
   width: 390px;
   height: 815px;
   left: 2000px;
   top: 80px;
-  background:rgba(30, 16, 20, 0.5);
+  background: rgba(30, 16, 20, 0.5);
   border-radius: 15px;
-  z-index: 3;
-}
-@keyframes slide {
-  100% {left: 1509px;}
-}
-.dañoInputSistema:checked ~ .backgroundDañoSistemaSlide{ /* esto controla la animacion */
-  opacity: 1;
-  animation: slide 0.5s forwards;
-}
+  z-index: 3; }
 
+@keyframes slide {
+  100% {
+    left: 1509px; } }
+
+.dañoInputSistema:checked ~ .backgroundDañoSistemaSlide {
+  /* esto controla la animacion */
+  opacity: 1;
+  animation: slide 0.5s forwards; }
 
 /* RESISTENCIA DE CHAKRA SISTEMA */
-
-.resistenciaInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+.resistenciaInputSistema {
+  /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
   position: relative;
   max-width: 214px;
   max-height: 214px;
   left: 112px;
   top: 339px;
-  border-radius: 10px;
-}
-.backgroundResistenciaSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  border-radius: 10px; }
+
+.backgroundResistenciaSistemaSlide {
+  /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
   opacity: 0;
   position: fixed;
   width: 390px;
   height: 815px;
   left: 2000px;
   top: 80px;
-  background:rgba(30, 16, 20, 0.5);
+  background: rgba(30, 16, 20, 0.5);
   border-radius: 15px;
-  z-index: 3;
-}
+  z-index: 3; }
+
 @keyframes slide {
-  100% {left: 1509px;}
-}
-.resistenciaInputSistema:checked ~ .backgroundResistenciaSistemaSlide{ /* esto controla la animacion */
+  100% {
+    left: 1509px; } }
+
+.resistenciaInputSistema:checked ~ .backgroundResistenciaSistemaSlide {
+  /* esto controla la animacion */
   opacity: 1;
-  animation: slide 0.5s forwards;
-}
+  animation: slide 0.5s forwards; }
 
 /* HERIDAS SISTEMA */
-
-.heridasInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+.heridasInputSistema {
+  /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
   position: relative;
   max-width: 214px;
   max-height: 214px;
   left: 112px;
   top: 339px;
-  border-radius: 10px;
-}
-.backgroundHeridasSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  border-radius: 10px; }
+
+.backgroundHeridasSistemaSlide {
+  /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
   opacity: 0;
   position: fixed;
   width: 390px;
   height: 815px;
   left: 2000px;
   top: 80px;
-  background:rgba(30, 16, 20, 0.5);
+  background: rgba(30, 16, 20, 0.5);
   border-radius: 15px;
-  z-index: 3;
-}
+  z-index: 3; }
+
 @keyframes slide {
-  100% {left: 1509px;}
-}
-.heridasInputSistema:checked ~ .backgroundHeridasSistemaSlide{ /* esto controla la animacion */
+  100% {
+    left: 1509px; } }
+
+.heridasInputSistema:checked ~ .backgroundHeridasSistemaSlide {
+  /* esto controla la animacion */
   opacity: 1;
-  animation: slide 0.5s forwards;
-}
+  animation: slide 0.5s forwards; }
 
 /* ATAQUES COMBINADOS SISTEMA */
-
-.ataquesCombinadosInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+.ataquesCombinadosInputSistema {
+  /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
   position: relative;
   max-width: 214px;
   max-height: 214px;
   left: 112px;
   top: 339px;
-  border-radius: 10px;
-}
-.backgroundataquesCombinadosSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  border-radius: 10px; }
+
+.backgroundataquesCombinadosSistemaSlide {
+  /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
   opacity: 0;
   position: fixed;
   width: 390px;
   height: 815px;
   left: 2000px;
   top: 80px;
-  background:rgba(30, 16, 20, 0.5);
+  background: rgba(30, 16, 20, 0.5);
   border-radius: 15px;
-  z-index: 3;
-}
+  z-index: 3; }
+
 @keyframes slide {
-  100% {left: 1509px;}
-}
-.ataquesCombinadosInputSistema:checked ~ .backgroundataquesCombinadosSistemaSlide{ /* esto controla la animacion */
+  100% {
+    left: 1509px; } }
+
+.ataquesCombinadosInputSistema:checked ~ .backgroundataquesCombinadosSistemaSlide {
+  /* esto controla la animacion */
   opacity: 1;
-  animation: slide 0.5s forwards;
-}
+  animation: slide 0.5s forwards; }
 
 /* RANGOS SISTEMA */
-
-.rangosInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+.rangosInputSistema {
+  /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
   position: relative;
   max-width: 214px;
   max-height: 214px;
   left: 112px;
   top: 339px;
-  border-radius: 10px;
-}
-.backgroundRangosSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  border-radius: 10px; }
+
+.backgroundRangosSistemaSlide {
+  /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
   opacity: 0;
   position: fixed;
   width: 390px;
   height: 815px;
   left: 2000px;
   top: 80px;
-  background:rgba(30, 16, 20, 0.5);
+  background: rgba(30, 16, 20, 0.5);
   border-radius: 15px;
-  z-index: 3;
-}
+  z-index: 3; }
+
 @keyframes slide {
-  100% {left: 1509px;}
-}
-.rangosInputSistema:checked ~ .backgroundRangosSistemaSlide{ /* esto controla la animacion */
+  100% {
+    left: 1509px; } }
+
+.rangosInputSistema:checked ~ .backgroundRangosSistemaSlide {
+  /* esto controla la animacion */
   opacity: 1;
-  animation: slide 0.5s forwards;
-}
+  animation: slide 0.5s forwards; }
 
 /* HIJOS SISTEMA */
-
-.hijosInputSistema{ /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
+.hijosInputSistema {
+  /* ESTO CONTROLA EL TAMAÑO DE LOS ICONOS DEL GRID */
   position: relative;
   max-width: 214px;
   max-height: 214px;
   left: 112px;
   top: 339px;
-  border-radius: 10px;
-}
-.backgroundHijosSistemaSlide{ /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
+  border-radius: 10px; }
+
+.backgroundHijosSistemaSlide {
+  /* ESTO CONTROLA EL SLIDE DEL TEXTO DE LOS SISTEMAS*/
   opacity: 0;
   position: fixed;
   width: 390px;
   height: 815px;
   left: 2000px;
   top: 80px;
-  background:rgba(30, 16, 20, 0.5);
+  background: rgba(30, 16, 20, 0.5);
   border-radius: 15px;
-  z-index: 3;
-}
+  z-index: 3; }
+
 @keyframes slide {
-  100% {left: 1509px;}
-}
-.hijosInputSistema:checked ~ .backgroundHijosSistemaSlide{ /* esto controla la animacion */
+  100% {
+    left: 1509px; } }
+
+.hijosInputSistema:checked ~ .backgroundHijosSistemaSlide {
+  /* esto controla la animacion */
   opacity: 1;
-  animation: slide 0.5s forwards;
-}
+  animation: slide 0.5s forwards; }
 
-
-
-
-
-
-
-
-.hrSistemas{
-  color:#dfdfdf;
+.hrSistemas {
+  color: #dfdfdf;
   border: 1px #FFFFFF solid;
   position: relative;
   left: 13%;
   width: 75%;
   z-index: 2;
-  opacity: 1;
-}
-.tituloAdicional1{
+  opacity: 1; }
+
+.tituloAdicional1 {
   padding-top: 50px;
   padding-bottom: 20px;
   text-align: center;
   font-size: 20px;
   font-family: Naruto;
-  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-}
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
 
-#ejemploChakra1{
+#ejemploChakra1 {
   display: block;
   color: yellow;
   border: 1px dashed #ff0000;
-  background: rgba(155,111,0,0.35);
-}
-#ejemploChakra2{
+  background: rgba(155, 111, 0, 0.35); }
+
+#ejemploChakra2 {
   display: block;
-  color: rgb(127, 124, 124);
-  border: 1px dashed rgb(79, 26, 30);
+  color: #7f7c7c;
+  border: 1px dashed #4f1a1e;
   background: rgba(128, 38, 41, 0.35);
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-right: 10px;
-}
-#infoImportanteSistemas{ /* ! ESTO CONTROLA LOS TEXTOS IMPORTANTES*/
-  color: rgb(8, 128, 24);
-  text-decoration: underline;
-}
-#infoImportanteBoldSistemas{ /* ! ESTO CONTROLA LOS TEXTOS TITULO BOLD*/
-  font-weight: bold;
-  color: rgb(9, 12, 8);
-}
-#infoImportanteAvisos{
-  font-weight: bold;
-  color: rgb(193, 145, 161);
-}
-#desaparecerlista{
-  list-style: none;
-}
+  padding-right: 10px; }
 
-.clickButtonSistema{
-  color: rgb(202, 206, 7);
+#infoImportanteSistemas {
+  /* ! ESTO CONTROLA LOS TEXTOS IMPORTANTES*/
+  color: #088018;
+  text-decoration: underline; }
+
+#infoImportanteBoldSistemas {
+  /* ! ESTO CONTROLA LOS TEXTOS TITULO BOLD*/
+  font-weight: bold;
+  color: #090c08; }
+
+#infoImportanteAvisos {
+  font-weight: bold;
+  color: #c191a1; }
+
+#desaparecerlista {
+  list-style: none; }
+
+.clickButtonSistema {
+  color: #cace07;
   text-decoration: none;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
+.tituloPaginaTalleres {
+  padding-top: 20px; }
 
+.descripcionPaginaTalleres {
+  padding-top: 40px; }
 
+.tituloPaginaEventos {
+  padding-top: 20px; }
 
+.descripcionPaginaEventos {
+  padding-top: 40px; }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*! TALLERES CODE */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-
-.tituloPaginaTalleres{
-  padding-top: 20px;
-}
-.descripcionPaginaTalleres{
-  padding-top: 40px;
-}
-
-
-
-
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*! EVENTOS CODE */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-.tituloPaginaEventos{
-  padding-top: 20px;
-}
-.descripcionPaginaEventos{
-  padding-top: 40px;
-}
-
-
-.rectangleObjetsGeneral{
+.rectangleObjetsGeneral {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px 29px;
-}
-.EventoFondo{
+  gap: 10px 29px; }
+
+.EventoFondo {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url(./images/plantillas/fondoEventos.webp);
-  border-radius: 10px ;
+  border-radius: 10px;
   width: 320px;
   height: 449px;
-  z-index: 3;
-}
-.tituloEvento{
+  z-index: 3; }
+
+.tituloEvento {
   color: #dfdfdf;
   font-family: Naruto;
   margin-top: 20px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(32, 14, 17, 0.70);
-}
-.descripcionEvento{
+  background-color: rgba(32, 14, 17, 0.7); }
+
+.descripcionEvento {
   position: relative;
   top: 117px;
   color: #dfdfdf;
@@ -1211,427 +1012,270 @@ footer{
   font-size: 12px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(32, 14, 17, 0.70);
-
-}
-
-
-
-
+  background-color: rgba(32, 14, 17, 0.7); }
 
 /* ! TIENDA HTML */
-
-.rectangleObjetsGeneral{
+.rectangleObjetsGeneral {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: relative;
-}
+  position: relative; }
 
-.tituloTiendaPrincipal{
-  padding-top: 20px;
-}
-.descripcionTiendaPrincipal{
-  padding-top: 40px;
-}
-.tituloTienda{
+.tituloTiendaPrincipal {
+  padding-top: 20px; }
+
+.descripcionTiendaPrincipal {
+  padding-top: 40px; }
+
+.tituloTienda {
   padding-top: 10px;
   align-items: center;
   text-align: center;
   color: #FFFFFF;
   font-family: Naruto;
-  background-color: rgba(32, 14, 17, 0.70);
+  background-color: rgba(32, 14, 17, 0.7);
   border-radius: 10px;
-  width: 100%;
-}
-.portadaTienda{
-  border-radius: 10px;
-}
-.inputRadioTienda{
-  display: none;
-}
-.labelRadioTienda{
+  width: 100%; }
+
+.portadaTienda {
+  border-radius: 10px; }
+
+.inputRadioTienda {
+  display: none; }
+
+.labelRadioTienda {
   min-width: 150px;
   max-width: 150px;
   text-align: center;
   padding: 8px;
-  color: rgb(199, 209, 0);
+  color: #c7d100;
   cursor: pointer;
   border-radius: 10px;
-  border: 1px solid rgb(199, 209, 0);
-}
-.labelRadioTienda:hover{
-  color: black;
-  background-color: rgb(199, 209, 0);
-  transition: all 0.5s;
-}
+  border: 1px solid #c7d100; }
+  .labelRadioTienda:hover {
+    color: black;
+    background-color: #c7d100;
+    transition: all 0.5s; }
 
-.sectionArmasLanzables{
+.sectionArmasLanzables {
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
-.fondoCard{
+.fondoCard {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   padding: 10px;
-  background-color: rgba(96, 28, 31, 0.40);
+  background-color: rgba(96, 28, 31, 0.4);
   max-width: 380px;
-  max-height: 440px;
-}
-.tituloCard{
+  max-height: 440px; }
+
+.tituloCard {
   margin-top: 10px;
   text-align: center;
   color: #FFFFFF;
   font-family: Naruto;
-  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-}
-.cardBody{
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+.cardBody {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.fondoCard img{
+  align-items: center; }
+
+.fondoCard img {
   max-width: 100%;
-  border-radius: 10px;
-}
-.descripcionCard{
+  border-radius: 10px; }
+
+.descripcionCard {
   color: #FFFFFF;
   text-align: justify;
   font: Cabin;
   overflow: hidden;
   overflow-y: scroll;
-  height: 80px;
-  
-}
+  height: 80px; }
 
-.descripcionDetallesObjeto{
+.descripcionDetallesObjeto {
   width: 100%;
   text-align: center;
   display: block;
   color: yellow;
   border: 2px dashed #000000;
-  background: rgba(155,111,0,0.35);
-  font-size: 10px;
-}
-
+  background: rgba(155, 111, 0, 0.35);
+  font-size: 10px; }
 
 /*  */
 /*  */
-
 .descripcionCard::-webkit-scrollbar {
   border-radius: 10px;
   background-color: #dfdfdf;
   width: 5px;
-  height: 5px;
-}
+  height: 5px; }
+
 .descripcionCard::-webkit-scrollbar-thumb {
-  background: #000;
-}
+  background: #000; }
 
 /*  */
 /*  */
 /*  */
 /*  */
 /*  */
-
-.sectionGeneralTienda{
+.sectionGeneralTienda {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  flex-direction: row;
-}
-
-
+  flex-direction: row; }
 
 /*  */
 /*  */
 /*  */
 /*  */
 /*  */
+.sectionArmasLanzables {
+  display: none; }
 
-.sectionArmasLanzables{
-  display: none;
-}
-.inputArmasLanzables:checked ~ .sectionArmasLanzables{
+.inputArmasLanzables:checked ~ .sectionArmasLanzables {
   display: flex;
-  gap: 10px;
-}
+  gap: 10px; }
 
 /*  */
+.sectionEspadas {
+  display: none; }
 
-.sectionEspadas{
-  display: none;
-}
-.inputEspadas:checked ~ .sectionEspadas{
+.inputEspadas:checked ~ .sectionEspadas {
   display: flex;
-  gap: 10px;
-}
+  gap: 10px; }
 
 /*  */
+.sectionKyujutsu {
+  display: none; }
 
-.sectionKyujutsu{
-  display: none;
-}
-.inputKyujutsu:checked ~ .sectionKyujutsu{
+.inputKyujutsu:checked ~ .sectionKyujutsu {
   display: flex;
-  gap: 10px;
-}
+  gap: 10px; }
 
 /*  */
+.sectionArmasVariadas {
+  display: none; }
 
-.sectionArmasVariadas{
-  display: none;
-}
-.inputArmasVariadas:checked ~ .sectionArmasVariadas{
+.inputArmasVariadas:checked ~ .sectionArmasVariadas {
   display: flex;
-  gap: 10px;
-}
+  gap: 10px; }
 
+@media (max-height: 735px) {
+  .linksNavegador {
+    padding-top: 40px; } }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  */
-/*  */
-/*  */
-
-/*  */
-/* ! MEDIA QUIRIES PARA TODO - NO TOCAR */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-@media (max-height: 735px){
-  .linksNavegador{
-    padding-top: 40px;
-  }
-}
 @media (min-width: 1550px) {
-    /* ? TAMAÑO PC*/
-    .portadaInicio {
-      position: relative;
-      left: 616px;
-    }
-    .rectangleInicio {
-      position: relative;
-      left: 616px;
-    }
-    .rectangleObjetsGeneral{
-      position: relative;
-      left: 616px;
-    }
-}
+  /* ? TAMAÑO PC*/
+  .portadaInicio, .rectangleInicio, .rectangleObjetsGeneral {
+    position: relative;
+    left: 616px; } }
+
 @media (min-width: 1280px) and (max-width: 1549px) {
   /* ? TAMAÑO LAPTOP*/
-  .portadaInicio {
+  .portadaInicio, .rectangleInicio, .rectangleObjetsGeneral {
     position: relative;
-    left: 351px;
-  }
-  .rectangleInicio {
-    position: relative;
-    left: 351px;
-  }
-  .rectangleObjetsGeneral{
-    position: relative;
-    left: 351px;
-  }
-  .backgroundSistemasGeneral{
-    background:rgb(30, 16, 20);
-    
-  }
+    left: 351px; }
+  .backgroundSistemasGeneral {
+    background: #1e1014; }
   @keyframes slide {
-    100% {left:860px;}
-  }
-}
+    100% {
+      left: 860px; } } }
+
 @media (min-width: 1280px) {
   /* ? TAMAÑO PC -> lAPTOP*/
   .navBarCellphone {
-    display: none;
-  }
-  footer{
-    margin-left: 164px;
-  }
-  
-}
-@media (max-width: 1279px){
-  .rectangleInicio{
+    display: none; }
+  footer {
+    margin-left: 164px; } }
+
+@media (max-width: 1279px) {
+  .rectangleInicio {
     /* top: -30px; */
     display: flex;
-    justify-content:center;
-    min-height: 576px;
-  }
-  .linksNavegador{
+    justify-content: center;
+    min-height: 576px; }
+  .linksNavegador {
     display: flex;
-    flex-direction: column;
-  }
-
-  .hrNav{
-    display:none;
-  }
-  .navegadorGeneral{
+    flex-direction: column; }
+  .hrNav {
+    display: none; }
+  .navegadorGeneral {
     width: 97px;
     height: 97px;
     border-radius: 10px;
-    z-index: 2;
-  }
-  .iconoNav{
+    z-index: 2; }
+  .iconoNav {
     top: 0px;
-    left: 0px;
-  }
-  .navegadorGeneral:hover{
+    left: 0px; }
+  .navegadorGeneral:hover {
     width: 150px;
-    height: 100%;
-  }
-  .navegadorGeneral:hover .hrNav{
-    display: flex;
-  }
-
-  .navegadorGeneral:hover .linksNavegador{
-    display: flex;
-    transition: all 0.5s;
-  }
-  .linksNavegador li{
+    height: 100%; }
+    .navegadorGeneral:hover .hrNav {
+      display: flex; }
+    .navegadorGeneral:hover .linksNavegador {
+      display: flex;
+      transition: all 0.5s; }
+  .linksNavegador li {
     display: none;
-    transition: all 0.5s;
-  }
-  .navegadorGeneral:hover .linksNavegador li{
+    transition: all 0.5s; }
+  .navegadorGeneral:hover .linksNavegador li {
     display: flex;
-    transition: all 0.5s;
-  }
-  .squareDescripcion{
-    margin-left: 0px;
-  }
-  .carousel{
+    transition: all 0.5s; }
+  .squareDescripcion {
+    margin-left: 0px; }
+  .carousel {
     position: relative;
     left: auto;
     top: 299px;
-    z-index: 1;
-  }
-  .backgroundSistemasGeneral{
-    background:rgba(30, 16, 20);
-  }
+    z-index: 1; }
+  .backgroundSistemasGeneral {
+    background: #1e1014; } }
 
-}
-@media (max-width: 768px){
+@media (max-width: 768px) {
   @keyframes slide {
-    100% {left:369px;}
-  }
-@media (max-width: 485px){
-  .rectangleInicio{
+    100% {
+      left: 369px; } } }
+
+@media (max-width: 768px) and (max-width: 485px) {
+  .rectangleInicio {
     /* top: -30px; */
     display: flex;
-    justify-content:center;
-    min-height: 551px;
-  }
-  .rectangleObjetsGeneral a img{
-    width: 428px;
-  }
-  .linksNavegador li a{
+    justify-content: center;
+    min-height: 551px; }
+  .rectangleObjetsGeneral a img {
+    width: 428px; }
+  .linksNavegador li a {
     display: flex;
-    margin-top: 30px;
-  }
+    margin-top: 30px; }
   /* Sistemas */
-  .iconosSistemasGeneral{ /* ESTO CONTROLA LOS ICONOS DEL GRID PARA LUEGO VOLVERLOS SELECTORES */
+  .iconosSistemasGeneral {
+    /* ESTO CONTROLA LOS ICONOS DEL GRID PARA LUEGO VOLVERLOS SELECTORES */
     display: grid;
     justify-content: center;
-    grid-template-columns:53% 53%;
-    grid-template-rows: 191px 191px 191px 191px 191px;
-  }
-  .ImgSistema{
+    grid-template-columns: 53% 53%;
+    grid-template-rows: 191px 191px 191px 191px 191px; }
+  .ImgSistema {
     max-width: 180px;
-    max-height: 180px;
-  }
-
+    max-height: 180px; }
   @keyframes slide {
-    100% {left:19px;}
-  }
+    100% {
+      left: 19px; } }
   /* FICHAS */
+  .fondoFicha {
+    margin-top: 220px;
+    transform: rotate(90deg); }
+  .fondoFotoPerfil {
+    transform: rotate(90deg); } }
 
-  .fondoFicha{
-    margin-top: 220px;    
-    transform: rotate(90deg);
-  }
-  .fondoFotoPerfil{
-    transform: rotate(90deg);
-  }
-
-
-
-
-
-}
-@media (width: 768px){
+@media (max-width: 768px) and (width: 768px) {
   /* SISTEMAS */
-  .iconosSistemasGeneral{ /* ESTO CONTROLA LOS ICONOS DEL GRID PARA LUEGO VOLVERLOS SELECTORES */
+  .iconosSistemasGeneral {
+    /* ESTO CONTROLA LOS ICONOS DEL GRID PARA LUEGO VOLVERLOS SELECTORES */
     display: grid;
     justify-content: center;
-    grid-template-columns:26% 26% 26% 26%;
-    grid-template-rows: 191px 191px 191px 191px 191px;
-  }
-  .ImgSistema{
+    grid-template-columns: 26% 26% 26% 26%;
+    grid-template-rows: 191px 191px 191px 191px 191px; }
+  .ImgSistema {
     max-width: 180px;
-    max-height: 180px;
-  }
-}
-
-}
+    max-height: 180px; } }

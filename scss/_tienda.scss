@@ -1,0 +1,182 @@
+/* ! TIENDA HTML */
+
+.rectangleObjetsGeneral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  
+  .tituloTiendaPrincipal {
+    padding-top: 20px;
+  }
+  
+  .descripcionTiendaPrincipal {
+    padding-top: 40px;
+  }
+  
+  .tituloTienda {
+    padding-top: 10px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Naruto;
+    background-color: rgba(32, 14, 17, 0.7);
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .portadaTienda {
+    border-radius: 10px;
+  }
+  
+  .inputRadioTienda {
+    display: none;
+  }
+  
+  .labelRadioTienda {
+    min-width: 150px;
+    max-width: 150px;
+    text-align: center;
+    padding: 8px;
+    color: rgb(199, 209, 0);
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(199, 209, 0);
+  
+    &:hover {
+      color: black;
+      background-color: rgb(199, 209, 0);
+      transition: all 0.5s;
+    }
+  }
+  
+  .sectionArmasLanzables {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .fondoCard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(96, 28, 31, 0.4);
+    max-width: 380px;
+    max-height: 440px;
+  }
+  
+  .tituloCard {
+    margin-top: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Naruto;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  }
+  
+  .cardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fondoCard img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .descripcionCard {
+    color: #FFFFFF;
+    text-align: justify;
+    font: Cabin;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 80px;
+  }
+  
+  .descripcionDetallesObjeto {
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: yellow;
+    border: 2px dashed #000000;
+    background: rgba(155, 111, 0, 0.35);
+    font-size: 10px;
+  }
+  
+  /*  */
+  /*  */
+  
+  .descripcionCard {
+    &::-webkit-scrollbar {
+      border-radius: 10px;
+      background-color: #dfdfdf;
+      width: 5px;
+      height: 5px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: #000;
+    }
+  }
+  
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  
+  .sectionGeneralTienda {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  
+  .sectionArmasLanzables {
+    display: none;
+  }
+  
+  .inputArmasLanzables:checked ~ .sectionArmasLanzables {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /*  */
+  
+  .sectionEspadas {
+    display: none;
+  }
+  
+  .inputEspadas:checked ~ .sectionEspadas {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /*  */
+  
+  .sectionKyujutsu {
+    display: none;
+  }
+  
+  .inputKyujutsu:checked ~ .sectionKyujutsu {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /*  */
+  
+  .sectionArmasVariadas {
+    display: none;
+  }
+  
+  .inputArmasVariadas:checked ~ .sectionArmasVariadas {
+    display: flex;
+    gap: 10px;
+  }

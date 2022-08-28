@@ -1,0 +1,47 @@
+.tituloPaginaEventos {
+    padding-top: 20px;
+  }
+  
+  .descripcionPaginaEventos {
+    padding-top: 40px;
+  }
+  
+  .rectangleObjetsGeneral {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 29px;
+  }
+  
+  .EventoFondo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./images/plantillas/fondoEventos.webp);
+    border-radius: 10px;
+    width: 320px;
+    height: 449px;
+    z-index: 3;
+  }
+  
+  .tituloEvento {
+    color: #dfdfdf;
+    font-family: Naruto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(32, 14, 17, 0.7);
+  }
+  
+  .descripcionEvento {
+    position: relative;
+    top: 117px;
+    color: #dfdfdf;
+    text-align: justify;
+    font-family: Cabin;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(32, 14, 17, 0.7);
+  }

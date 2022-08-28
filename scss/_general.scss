@@ -1,0 +1,237 @@
+/* ! CODIGO */
+
+* {
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  body {
+    background-image: url("./images/Fondobackground.png");
+    background-position: top;
+    background-repeat: repeat;
+    background-size: auto;
+    padding-top: 25px;
+  }
+  
+  /* * CONTENEDORES GENERALES */
+  
+  .portadaInicio {
+    border-radius: 15px;
+  }
+  
+  .rectangleInicio {
+    /* ? ESTO CONTROLA EL FONDO DEL CONTENIDO*/
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -10px;
+    max-width: 889px;
+    height: 300px;
+    background: rgba(9, 5, 6, 0.85);
+  }
+  
+  .rectangleObjetsGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -10px;
+    max-width: 889px;
+    min-height: 400px;
+    background: rgba(9, 5, 6, 0.85);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 1;
+    padding-bottom: 20px;
+  }
+  
+  .navegadorGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: rgba(9, 5, 6, 0.85);
+    width: 100px;
+    height: 100%;
+    transition: width 0.5s ease;
+    z-index: 0;
+  
+    &:hover {
+      background: rgba(9, 5, 6, 0.85);
+      width: 150px;
+    }
+  }
+  
+  .iconoNav {
+    position: relative;
+    height: 97px;
+    width: 97px;
+    top: 18px;
+    left: 0px;
+    border-radius: 0px;
+    transition: all 0.5s;
+  }
+  
+  .navegadorGeneral:hover .iconoNav {
+    border-radius: 10px;
+    transition: all 0.5s;
+    left: 30px;
+  }
+  
+  .tituloMenuGeneral {
+    white-space: nowrap;
+    position: relative;
+    top: -48px;
+    left: 0px;
+    font-family: Naruto;
+    color: #FFFFFF;
+    opacity: 0;
+  }
+  
+  .navegadorGeneral:hover .tituloMenuGeneral {
+    opacity: 1;
+    transition: all 0.5s;
+    position: relative;
+    left: 150px;
+    top: -66px;
+    background: rgba(9, 5, 6, 0.85);
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .hrNav {
+    opacity: 1;
+    position: relative;
+    color: white;
+    width: 50%;
+    top: 0px;
+    left: 25%;
+    align-items: center;
+    border-width: 5px;
+  }
+  
+  /* .linksNavegador{
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  .navegadorGeneral:hover ~ .imgNavIcon {
+    display: flex;
+  }
+  
+  .linksNavegador li {
+    a {
+      display: flex;
+      margin-top: 60px;
+      font-family: Cabin;
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      font-size: 29px;
+      transition: all 0.5s;
+    }
+  
+    list-style: none;
+    display: flex;
+  }
+  
+  .imgNavIcon {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .textLinkNav {
+    opacity: 0;
+    position: relative;
+  
+    /* left: -90px; */
+  }
+  
+  .imgNavIcon:hover ~ .textLinkNav {
+    opacity: 1;
+    transition: all 0.5s;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10px;
+    background: rgba(9, 5, 6, 0.85);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    left: 58px;
+  }
+  
+  .carousel {
+    position: relative;
+    top: 22px;
+    left: 388px;
+    width: 485px;
+    height: 267px;
+    z-index: 1;
+  }
+  
+  #tituloCaruselText {
+    font-family: Cabin;
+    font-size: 20px;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  }
+  
+  #descripcionCaruselText {
+    font-family: Cabin;
+    font-size: 12px;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  }
+  
+  .carousel-item img {
+    border-radius: 10%;
+  }
+  
+  .squareDescripcion {
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 20px;
+    width: 342px;
+    height: 267px;
+    max-width: 342px;
+    max-height: 267px;
+    background: #200E11;
+    border-radius: 30px;
+  }
+  
+  .tituloPaginaGeneral {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 3px;
+  }
+  
+  .descripcionPaginaGeneral {
+    font-family: Cabin;
+    text-align: justify;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    font-family: Cabin;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    background-color: rgba(9, 5, 6, 0.85);
+    z-index: -1;
+  }
